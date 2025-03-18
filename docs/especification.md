@@ -78,7 +78,7 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 Devido a ser um projeto voltado para produtores de médio e pequeno porte, que ainda não tem esse contato com o mercado internacional, porém busca o mesmo, a fim de uma progressão de mercado. São identificadas as seguintes restrições ao projeto:
 
-|ID| Restrição                                             |
+|ID| Restrições                                            |
 |--|-------------------------------------------------------|
 |01| Cronograma: Etapa 1: Análise e especificação do problema (23/03); Etapa 2: Projeto dos requisitos e de artefatos do sistema (13/04); Etapa 3: Desenvolvimento da estrutura estática da solução (11/05); Etapa 4: Desenvol. da estrutura dinâmica da solução e Plano de Testes (15/06); Etapa 5: Testes, implantação e apresentação da solução (22/06); Apresentação do Projeto: 29/06.|
 |02| Layout e conteúdo: devem ser objetivos, claros, concisos e fáceis para facilitar a navegação e identificação dos elementos necessários para os usuários;|
