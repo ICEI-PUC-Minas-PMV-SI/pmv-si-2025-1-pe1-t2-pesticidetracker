@@ -76,15 +76,15 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+Devido a ser um projeto voltado para produtores de médio e pequeno porte, que ainda não tem esse contato com o mercado internacional, porém busca o mesmo, a fim de uma progressão de mercado. São identificadas as seguintes restrições ao projeto:
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| Cronograma: Etapa 1: Análise e especificação do problema (23/03); Etapa 2: Projeto dos requisitos e de artefatos do sistema (13/04); Etapa 3: Desenvolvimento da estrutura estática da solução (11/05); Etapa 4: Desenvol. da estrutura dinâmica da solução e Plano de Testes (15/06); Etapa 5: Testes, implantação e apresentação da solução (22/06); Apresentação do Projeto: 29/06.|
+|02| Layout e conteúdo: devem ser objetivos, claros, concisos e fáceis para facilitar a navegação e identificação dos elementos necessários para os usuários;|
+|03| Veracidade das informações: deve-se ter uma base de dados, sendo ela confiável para entregar conteúdos verídicos e qualificados;|
+|04| Automatização da atualização de informações contidas no site: para o tópico anterior ser alcançado da melhor forma, deve-se ter uma atualização diária ou mais recorrente da base de dados.|
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
