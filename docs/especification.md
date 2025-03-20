@@ -62,8 +62,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF001| A interface da aplicação deve ser clara e intuitiva, facilitando a navegação e permitindo a rápida adaptação as funcionalidades disponíveis. | ALTA |
+|RNF002| A interface deve ser responsiva, se adaptando a diferentes tamanhos de telas, sejam elas desktop, tablet ou smartphone, facilitando o uso em diferentes dispositivos. | ALTA |
+|RNF003| A aplicação deve ser funcional nos mais diversos navegadores, Chrome, Firefox, Safari, Edge, Opera, etc. |  MÉDIA |
+|RNF004| A aplicação deve ser capaz de carregar seus recursos rapidamente sem apresentar travamentos, para isso pode se adotar uma estrutura simples no HTML, CSS e Java Script. | ALTA |
+|RNF005| O código da aplicação deve ser limpo e organizado, facilitando a manutenibilidade e a possível adição de novas funcionalidades. | BAIXA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
