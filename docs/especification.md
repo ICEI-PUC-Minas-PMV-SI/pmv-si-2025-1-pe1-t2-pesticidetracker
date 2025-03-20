@@ -48,8 +48,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
+|RF001| O sistema deve permitir o cadastramento de produtos incluindo suas principais características e os pesticidas utilizados.  | ALTA |  
+|RF002| O sistema deve listar os produtos cadastrados.    | MÉDIA | 
+|RF003| O sistema deve permitir ao usuário consultar um banco de dados local.  | ALTA |
+|RF004| O sistema deve listar para o usuário os locais onde os pesticidas utilizados são proibidos e onde não há restrições.   | ALTA |
+|RF005| O sistema deve permitir que o usuário consulte a situação de um pesticida específico no banco de dados local.    | ALTA |
+|RF006| O sistema deve permitir que o usuário cadastre um monitoramento contínuo da situação de um pesticida.    | ALTA |
+|RF007| O sistema deve listar os pesticidas monitorados, apresentando em que locais eles são proibidos e onde são permitidos.    | ALTA |
+
 
 
 ### Requisitos não Funcionais
