@@ -32,14 +32,13 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A produção agrícola é uma das bases do mercado nacional e internacional, visto que é responsável pelo cultivo de insumos usados na alimentação humana, animal e na produção industrial [1]. A exportação de produtos pelo mercado agrícola brasileiro tem crescido de forma surpreendente nos últimos anos, e esse crescimento se dá devido a fatores como a boa produção, a boa receptividade do mercado internacional e o aumento generalizado dos preços médios de exportação de produtos agrícolas [2].
 
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
+De acordo com dados do Ministério de Agricultura e Instituto de Pesquisa Econômica Aplicada (Ipea), nos cinco primeiros meses de 2022 o setor agro superou US$ 63,00 bilhões em arrecadações, sendo US$ 15,1 bilhões somente em maio, o maior valor já registrado de toda série histórica do setor. Entre janeiro e maio houve um crescimento de 29%, com um superávit de US$ 57,00 bilhões [2].
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Contudo, existem alguns desafios que são enfrentados pelos produtores durante o processo de exportação de seus produtos, dentre eles existe a questão do registro de determinadas substâncias em alguns países e o não registro ou proibições das mesmas substâncias em outros territórios, influenciando diretamente no uso dos agrotóxicos durante o cultivo das plantações [3].  
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Com base nisso, a aplicação desenvolvida tem por objetivo ajudar no processo de exportação dos produtos agrícolas, auxiliando o produtor rural a identificar para quais mercados internacionais seus cultivos podem ser exportados com base nos agrotóxicos utilizados na plantação, além de identificar quais agrotóxicos podem ou não ser utilizados visando a exportação para um mercado exterior desejado. 
 
 ## Público-Alvo
 
