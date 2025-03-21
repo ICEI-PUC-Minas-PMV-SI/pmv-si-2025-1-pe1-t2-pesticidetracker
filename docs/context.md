@@ -6,16 +6,12 @@ Tendo em mente a posição do Brasil como um grande produtor de alimentos no cen
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+Empreendedores e empresas que almejam entrar no mercado internacional de venda e de compra de produtos agrícolas se deparam com uma infinidade de proibições e regulamentações relacionados ao uso de pesticidas. Enquanto no Brasil determinados pesticidas são permitidos e regulamentados, em outros países os mesmos produtos são proibidos ou possuem uma regulamentação diferente. Diante desse cenário, surgem questões cruciais que impedem que produtos produzidos com excelência e dentro das normas brasileiras sejam proibidos de serem comercializados em outros países. Por isso: Quais pesticidas são proibidos ou permitidos em determinados países? Quais são os efeitos dos pesticidas utilizados em uma plantação sobre os possíveis mercados compradores? 
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
+<!-- > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/) -->
 
 ## Objetivos
 
