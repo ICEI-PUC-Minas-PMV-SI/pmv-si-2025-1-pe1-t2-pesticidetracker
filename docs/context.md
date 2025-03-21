@@ -1,12 +1,8 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+Em face de um mercado global cada vez mais integrado e a desvalorização do real, possibilitasse que pequenas e médias empresas encarem a exportação como uma maneira segura de aumentar seus lucros, expandirem seus mercados consumidores e minimizarem as inseguras decorrentes de flutuações no mercado local. Porém, para que os produtos possam ser comercializados, é necessário haver uma adequação aos critérios e normas utilizados no mercado alvo.  
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
-
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+Tendo em mente a posição do Brasil como um grande produtor de alimentos no cenário internacional e a grande heterogeneidade das regulamentações de pesticidas em diferentes países e blocos econômicos, a Pesticide Tracker oferece uma solução simples para que pequenos e médios produtores possam identificar os mercados aptos a receber seus produtos, rastrear como cada pesticida vai afetar a receptividade de seus produtos e planejar quais pesticidas utilizar conforme o mercado alvo. 
 
 ## Problema
 
@@ -42,12 +38,12 @@ Com base nisso, a aplicação desenvolvida tem por objetivo ajudar no processo d
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+Pequenos e médios produtores rurais que desejam vender no mercado internacional.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+## Referências
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+\[1\] [blog.aegro.com.br/producao-agricola](https://blog.aegro.com.br/producao-agricola/#:~:text=agr%C3%ADcola%3A%20Desafios%20atuais-,O%20que%20%C3%A9%20produ%C3%A7%C3%A3o%20agr%C3%ADcola%3F,animal%20ou%20%C3%A0%20produ%C3%A7%C3%A3o%20industrial)
+
+\[2\] [www.domaniconsultoria.com](https://www.domaniconsultoria.com/post/exporta%C3%A7%C3%B5es-do-agroneg%C3%B3cio?utm_source=google&utm_medium=cpc&utm_campaign=dsa-todas-urls&utm_source=googleadgrants&utm_medium=cpc&utm_campaign=&utm_content=&utm_term=exporta%C3%A7%C3%A3o&utm_id=612857890719&gad_source=1&gclid=Cj0KCQjw-e6-BhDmARIsAOxxlxWMsDIiXS4i4laXjYQsiVyvC7cKeh7PYOBeNS68NRgiSUlnMH6uGdkaAtBdEALw_wcB)
+
+\[3\] [agriculturasustentavel.org.br](https://agriculturasustentavel.org.br/artigo/aprovacoes-e-proibicoes-de-agrotoxicos-em-diferentes-paises)
