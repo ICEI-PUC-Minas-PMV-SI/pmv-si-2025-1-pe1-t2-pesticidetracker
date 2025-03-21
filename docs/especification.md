@@ -8,19 +8,9 @@ Caso deseje atribuir uma imagem a sua persona, utilize o site https://thisperson
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+João tem 46 anos, é um produtor de frutas tropicais com vasta experiencia. Com a alta do dólar e desvalorização do real, João pretende vender suas frutas para mercados internacionais como União Europeia, Estados Unidos e Japão. Porém, por falta de conhecimento técnico e jurídico, João não sabe como cada pesticida utilizado em sua fazenda vai afetar a entrada de seus produtos em cada um dos mercados. 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Maria tem 33 anos e recentemente se tornou responsável por uma propriedade rural familiar que era de responsabilidade de seus pais. Maria sempre viu e se incomodou com a instabilidade do mercado nacional e como essa instabilidade afetava negativamente o negócio da sua família. Agora que Maria está em uma posição de liderança, ela busca expandir sua base consumidora e diminuir as incertezas de seu negócio.
 
 ## Histórias de Usuários
 
