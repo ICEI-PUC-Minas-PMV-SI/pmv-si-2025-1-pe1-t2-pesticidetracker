@@ -15,9 +15,23 @@ Empreendedores e empresas que almejam entrar no mercado internacional de venda e
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Objetivo Geral: 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Desenvolver um sistema que analise e informe como cada ingrediente ativo presente em pesticidas pode impactar a aceitação do produto em diferentes mercados compradores, considerando regulamentações, restrições e exigências específicas de cada país ou região. 
+
+Objetivos Específicos: 
+
+- Mapear regulamentações internacionais – Coletar e organizar informações sobre restrições e exigências de pesticidas em diferentes mercados, como União Europeia, EUA, China, Brasil, entre outros. 
+
+- Criar uma base de dados de ingredientes ativos – Listar os ingredientes presentes nos pesticidas e associá-los às regulamentações aplicáveis em cada país ou região. 
+
+- Desenvolver um mecanismo de análise automática – Implementar um algoritmo que compare a composição de um pesticida com as regulamentações vigentes para identificar possíveis restrições. 
+
+- Gerar relatórios e alertas – Criar funcionalidades que forneçam relatórios detalhados e alertas sobre possíveis problemas regulatórios ao comercializar o produto em determinados mercados. 
+
+- Garantir a atualização contínua da base de dados – Estabelecer um sistema que permita atualizações constantes sobre mudanças nas regulamentações globais. 
+
+- Implementar uma interface intuitiva – Desenvolver um painel de fácil uso para que os usuários consultem informações sobre a viabilidade de exportação do pesticida de forma rápida e clara. 
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
