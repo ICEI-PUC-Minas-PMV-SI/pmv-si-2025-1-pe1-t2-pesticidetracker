@@ -32,9 +32,6 @@ Objetivos Específicos:
 - Garantir a atualização contínua da base de dados – Estabelecer um sistema que permita atualizações constantes sobre mudanças nas regulamentações globais. 
 
 - Implementar uma interface intuitiva – Desenvolver um painel de fácil uso para que os usuários consultem informações sobre a viabilidade de exportação do pesticida de forma rápida e clara. 
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
