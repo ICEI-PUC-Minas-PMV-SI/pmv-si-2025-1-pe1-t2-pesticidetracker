@@ -1,11 +1,3 @@
-# Especificações do Projeto
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
-
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
-
 ## Personas
 
 João tem 46 anos, é um produtor de frutas tropicais com vasta experiencia. Com a alta do dólar e desvalorização do real, João pretende vender suas frutas para mercados internacionais como União Europeia, Estados Unidos e Japão. Porém, por falta de conhecimento técnico e jurídico, João não sabe como cada pesticida utilizado em sua fazenda vai afetar a entrada de seus produtos em cada um dos mercados. 
@@ -18,19 +10,15 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+| Eu como produtor rural | Quero cadastrar um novo produto informando suas características (nome, data de plantio, data de colheita etc.) e os pesticidas utilizados  | Para manter um registro atualizado e acompanhar todos os produtos aplicados nos meus plantios, garantindo uso seguro e dentro da lei|
+|Eu como produtor rural |  Quero visualizar uma lista de todos os produtos cadastrados | Para localizar rapidamente um produto específico e acompanhar o status de cada um, sem precisar pesquisar individualmente|
+|Eu como produtor rural | Quero cadastrar pesticidas em um sistema de monitoramento (incluindo onde são legalizados ou proibidos)             | Para manter minhas produções seguras e dentro da lei |
+|Eu como produtor rural | Quero acompanhar os pesticidas e suas mudanças em relação aos mercados em que eles são legalizados ou proibidos     | Para manter o meu uso de pesticidas dentro da lei  |
+|Eu como produtor rural | Quero consultar detalhes de um pesticida em específico | Para saber em detalhes suas restrições, aplicações e limites da lei |
+|Eu como produtor rural | Quero criar um alerta ou monitoramento em relação a um pesticida em específico|  Para que eu possa manter meu uso de pesticidas seguro e dentro das leis locais|
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
-## Requisitos
+## Requisito
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
@@ -58,21 +46,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF004| A aplicação deve ser capaz de carregar seus recursos rapidamente sem apresentar travamentos, para isso pode se adotar uma estrutura simples no HTML, CSS e Java Script. | ALTA |
 |RNF005| O código da aplicação deve ser limpo e organizado, facilitando a manutenibilidade e a possível adição de novas funcionalidades. | BAIXA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 ## Restrições
 
 Devido a ser um projeto voltado para produtores de médio e pequeno porte, que ainda não tem esse contato com o mercado internacional, porém busca o mesmo, a fim de uma progressão de mercado. São identificadas as seguintes restrições ao projeto:
@@ -83,8 +56,3 @@ Devido a ser um projeto voltado para produtores de médio e pequeno porte, que a
 |02| Layout e conteúdo: devem ser objetivos, claros, concisos e fáceis para facilitar a navegação e identificação dos elementos necessários para os usuários;|
 |03| Veracidade das informações: deve-se ter uma base de dados, sendo ela confiável para entregar conteúdos verídicos e qualificados;|
 |04| Automatização da atualização de informações contidas no site: para o tópico anterior ser alcançado da melhor forma, deve-se ter uma atualização diária ou mais recorrente da base de dados.|
-
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
