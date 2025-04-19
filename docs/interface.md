@@ -24,3 +24,50 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 ![Wireframe 01 - Listagem de produtos](img/wireframe-01.png)
 
 O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
+
+### Wireframe 03 - Cadastro informações de contato
+
+![Wireframe 03 - Cadastro informações de contato](img/Wireframe-03-Cadastro%20informações%20de%20contato.png)
+
+O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
+
+### Wireframe 04 - Editar informações de contato
+
+![Wireframe 04 - Editar informações de contato](img/Wireframe-04-Editar%20informações%20de%20contato.png)
+
+O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
+
+
+### Wireframe 05 - Visualizar informações de contato
+
+![Wireframe 05 - Visualizar informações de contato](img/Wireframe-05-Visualizar%20informações%20de%20contato.png)
+
+O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
+
+
+### Wireframe 06 - Login
+
+![Wireframe 06 - Login](img/Wireframe-06-Login.png)
+
+O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
+
+
+### Wireframe 07 - Detalhamento do produto
+
+![Wireframe 07 - Detalhamento do produto](img/Wireframe-07-Detalhamento%20do%20produto.png)
+
+O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
+
+
+### Wireframe 08 - Cadastrar Produto
+
+![Wireframe 08 - Cadastrar Produto](img/Wireframe-08-Cadastrar%20Produto.png)
+
+O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
+
+
+### Wireframe 09 - Busca de pesticidas
+
+![Wireframe 09 - Busca de pesticidas](img/Wireframe-09-Busca%20de%20pesticidas.png)
+
+O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
