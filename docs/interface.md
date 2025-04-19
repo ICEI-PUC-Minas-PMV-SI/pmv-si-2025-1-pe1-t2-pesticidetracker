@@ -17,22 +17,10 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 > - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
 
-## Wireframes
+## Wireframes - PesticideTracker
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface e é fundamental sempre relacionar cada wireframe com o(s) requisito(s) que ele atende.
+### Wireframe 01 - Listagem de produtos cadastrados
 
-### Exemplo
+![Wireframe 01 - Listagem de produtos](img/wireframe-01.png)
 
-A tela inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade. Nesta tela, são apresentados os seguintes requisitos
-
-![Exemplo de Wireframe](img/wireframe-example.png)
-
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
