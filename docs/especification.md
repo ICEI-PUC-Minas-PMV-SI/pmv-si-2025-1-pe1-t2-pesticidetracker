@@ -33,6 +33,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF005| O sistema deve permitir que o usuário consulte a situação de um pesticida específico no banco de dados local.    | ALTA |
 |RF006| O sistema deve permitir que o usuário cadastre um monitoramento contínuo da situação de um pesticida.    | ALTA |
 |RF007| O sistema deve listar os pesticidas monitorados, apresentando em que locais eles são proibidos e onde são permitidos.    | ALTA |
+|RF008| O sistema deve permitir que o usuário acesse sua conta por meio de uma tela de login.    | MÉDIA |
+|RF009| O sistema deve permitir o cadastramento de usuários.    | MÉDIA |
+|RF010| O sistema deve permitir que o usuário visualize suas informações cadastradas.    | BAIXA |
+|RF011| O sistema deve permitir que o usuário edite suas informações pessoais.    | BAIXA |
 
 
 
