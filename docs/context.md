@@ -49,8 +49,5 @@ Pequenos e médios produtores rurais que desejam vender no mercado internacional
 
 ## Referências
 
-\[1\] [blog.aegro.com.br/producao-agricola](https://blog.aegro.com.br/producao-agricola/#:~:text=agr%C3%ADcola%3A%20Desafios%20atuais-,O%20que%20%C3%A9%20produ%C3%A7%C3%A3o%20agr%C3%ADcola%3F,animal%20ou%20%C3%A0%20produ%C3%A7%C3%A3o%20industrial)
+As referências estão listadas [aqui](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe1-t2-pesticidetracker/blob/main/docs/references.md).
 
-\[2\] [www.domaniconsultoria.com](https://www.domaniconsultoria.com/post/exporta%C3%A7%C3%B5es-do-agroneg%C3%B3cio?utm_source=google&utm_medium=cpc&utm_campaign=dsa-todas-urls&utm_source=googleadgrants&utm_medium=cpc&utm_campaign=&utm_content=&utm_term=exporta%C3%A7%C3%A3o&utm_id=612857890719&gad_source=1&gclid=Cj0KCQjw-e6-BhDmARIsAOxxlxWMsDIiXS4i4laXjYQsiVyvC7cKeh7PYOBeNS68NRgiSUlnMH6uGdkaAtBdEALw_wcB)
-
-\[3\] [agriculturasustentavel.org.br](https://agriculturasustentavel.org.br/artigo/aprovacoes-e-proibicoes-de-agrotoxicos-em-diferentes-paises)
