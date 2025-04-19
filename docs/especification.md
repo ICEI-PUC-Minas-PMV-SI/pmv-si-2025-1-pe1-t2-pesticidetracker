@@ -18,7 +18,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Eu como produtor rural | Quero criar um alerta ou monitoramento em relação a um pesticida em específico|  Para que eu possa manter meu uso de pesticidas seguro e dentro das leis locais|
 
 
-## Requisito
+## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
