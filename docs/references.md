@@ -1,12 +1,5 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizadas no desenvolvimento do trabalho.
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/referencias/)
-
-Exemplos de referências bibliográficas:
-
 **[1]** - _PREVEDEL, Denise. Produção agrícola: entenda os tipos e sistemas de produção. **Aegro**, 2024. Disponível em: <https://blog.aegro.com.br/producao-agricola/>. Acesso em: 20 de março de 2025._
 
 **[2]** - CORRÊA, Julia Carvalho. Exportações do agronegócio. **Domani Consultoria**, 2022. Disponível em: <https://www.domaniconsultoria.com/post/exporta%C3%A7%C3%B5es-do-agroneg%C3%B3cio>. Acesso em: 20 de março de 2025._
