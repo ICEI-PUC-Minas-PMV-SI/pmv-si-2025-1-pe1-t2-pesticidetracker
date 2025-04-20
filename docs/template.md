@@ -1,12 +1,15 @@
 # Template padrão do site
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+Layout padrão desktop:
+![Layout padrão desktop](img/LayoutPadraoDesktop.png)
 
-Explique as guias de estilo utilizadas no seu projeto.
+Layout padrão smartphone:
+![Layout padrão desktop](img/LayoutPadraoSmartphone.png)
+
 
 ## Design
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+![Design](img/Design.png)
 
 
 ## Cores
