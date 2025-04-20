@@ -67,5 +67,5 @@ O wireframe descreve o requisito RF005, com a lista de pesticidas no banco de da
 
 ![Wireframe 10 - Detalhamento do pesticida](https://github.com/user-attachments/assets/978bd048-2db9-454e-983d-c8c4edc39fd8)
 
-O wireframe descreve o requisito 
+O wireframe descreve os requisitos RF005 e RF006, onde o sistema permite que o usuário consulte a situação do pesticida específico e também que o usuário cadastre um monitoramento contínuo do mesmo.
 
