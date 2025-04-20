@@ -11,7 +11,16 @@ Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo d
 
 ## Cores
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+As cores foram escolhidas para remeter a área a qual a aplicação está inserida
+
+![Paleta de cores](img/paleta-de-cores.png)
+
+Detalhes sobre as cores adotadas:
+- A cor #000000 será usada para textos;
+- A cor #FAFAFB será usada para planos de fundo;
+- A cor #48FF7F será a cor primária da aplicação;
+- As cores #FF1B1B e #1CFF60 serão adotadas para indicar erros e sucessos, respectivamente;
+- Algumas cores complementares são: #027333, #025928, #8CBF3F, #A3BF65 e #F2F2F2.
 
 
 ## Tipografia
