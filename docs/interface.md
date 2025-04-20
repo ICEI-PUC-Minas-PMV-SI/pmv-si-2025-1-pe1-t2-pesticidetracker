@@ -61,3 +61,11 @@ O wireframe descreve o requisito RF001, a tela permite que o usuário cadastre u
 ![Wireframe 09 - Busca de pesticidas](img/Wireframe-09-Busca%20de%20pesticidas.png)
 
 O wireframe descreve o requisito RF005, com a lista de pesticidas no banco de dados local o usuário pode fazer uma busca por pesticidas baseado no nome do pesticida e em suas características.
+
+
+### Wireframe 10 - Detalhamento do pesticida
+
+![Wireframe 10 - Detalhamento do pesticida](https://github.com/user-attachments/assets/978bd048-2db9-454e-983d-c8c4edc39fd8)
+
+O wireframe descreve o requisito 
+
