@@ -27,6 +27,12 @@ Detalhes sobre as cores adotadas:
 
 Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
 
+A fonte adotada será a Roboto, com diferentes espessuras e tamanhos:
+- Para títulos será usado a espessuras Bold com tamanho de 32px;
+- Para subtítulos será usado a espessuras Regular com tamanho de 24px;
+- Para os textos em geral da aplicação será usado a espessuras Regular com tamanho de 18px;
+- Para textos auxiliares será usado a espessuras Regular com tamanho de 14px,
+
 
 ## Iconografia
 
