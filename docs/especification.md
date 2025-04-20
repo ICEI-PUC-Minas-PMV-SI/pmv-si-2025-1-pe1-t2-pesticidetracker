@@ -28,7 +28,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----| 
 |RF001| O sistema deve permitir o cadastramento de produtos incluindo suas principais características e os pesticidas utilizados.  | ALTA |  
 |RF002| O sistema deve listar os produtos cadastrados.    | MÉDIA | 
-|RF003| O sistema deve permitir ao usuário consultar um banco de dados local.  | ALTA |
+|RF003| O sistema deve permitir ao usuário visualizar como cada pesticida utilizado afeta nos mercados onde o produto vai poder ser comercializado.  | ALTA |
 |RF004| O sistema deve listar para o usuário os locais onde os pesticidas utilizados são proibidos e onde não há restrições.   | ALTA |
 |RF005| O sistema deve permitir que o usuário consulte a situação de um pesticida específico no banco de dados local.    | ALTA |
 |RF006| O sistema deve permitir que o usuário cadastre um monitoramento contínuo da situação de um pesticida.    | ALTA |
