@@ -16,6 +16,12 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 O wireframe descreve o requisito RF002, com a lista de produtos cadastrados, também é possível visualizar um filtro e uma paginação, com o objetivo de facilitar a navegação do usuário. Na tela também é possivel que o usuário siga para a tela de cadastro de produtos e para a tela de detalhamento do produto.
 
+### Wireframe 02 - Listagem de pesticidas monitorados
+
+![Wireframe 02 - Listagem de pesticidas monitorados](img/wireframe-02.png)
+
+O wireframe descreve o requisito RF007, visto que apresenta uma listagem dos pesticidas monitorados juntamente com os locais onde eles são monitorados.
+
 ### Wireframe 03 - Cadastro informações de contato
 
 ![Wireframe 03 - Cadastro informações de contato](img/Wireframe-03-Cadastro%20informações%20de%20contato.png)
