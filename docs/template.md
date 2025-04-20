@@ -25,8 +25,6 @@ Detalhes sobre as cores adotadas:
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
-
 A fonte adotada será a Roboto, com diferentes espessuras e tamanhos:
 - Para títulos será usado a espessuras Bold com tamanho de 32px;
 - Para subtítulos será usado a espessuras Regular com tamanho de 24px;
@@ -36,16 +34,29 @@ A fonte adotada será a Roboto, com diferentes espessuras e tamanhos:
 
 ## Iconografia
 
-Defina os ícones que serão utilizados e suas respectivas funções.
+Os ícones usados foram:
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
+Para seguir para uma próxima página em listagens de registros:
 
+![chevron rigth](img/chevron-rigth.png)
 
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+Para retornar para uma página anterior em listagens de registros:
+
+![chevron left](img/chevron-left.png)
+
+Indica um menu de opções suspenso:
+
+![caret down](img/caret-down.png)
+
+Indica uma opção para adição de novos registros:
+
+![plus](img/plus.png)
+
+Indica algum informação bem sucedida:
+
+![check](img/check.png)
+
+Indica algum informação mal sucedida:
+
+![xmark](img/xmark.png)
+
