@@ -1,9 +1,11 @@
 # Template padrão do site
 
 Layout padrão desktop:
+
 ![Layout padrão desktop](img/LayoutPadraoDesktop.png)
 
 Layout padrão smartphone:
+
 ![Layout padrão desktop](img/LayoutPadraoSmartphone.png)
 
 
