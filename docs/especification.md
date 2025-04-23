@@ -60,3 +60,14 @@ Devido a ser um projeto voltado para produtores de médio e pequeno porte, que a
 |02| Layout e conteúdo: devem ser objetivos, claros, concisos e fáceis para facilitar a navegação e identificação dos elementos necessários para os usuários;|
 |03| Veracidade das informações: deve-se ter uma base de dados, sendo ela confiável para entregar conteúdos verídicos e qualificados;|
 |04| Automatização da atualização de informações contidas no site: para o tópico anterior ser alcançado da melhor forma, deve-se ter uma atualização diária ou mais recorrente da base de dados.|
+
+## Metodologia
+
+A metodologia escolhida para o desenvolvimento de nossa aplicação foi o Kanban. Esse método de desenvolvimento ágil foca na visualização do fluxo de trabalho e na melhoria contínua. As principais vantagens de utilizar o Kanban são sua facilidade de implementação, a redução no tempo de entrega de cada processo e a flexibilidade. Além disso, ele facilita a identificação de possíveis gargalos no fluxo de trabalho.
+
+### Ferramentas
+
+Utilizamos as seguintes ferramentas em nosso projeto:
+
+* Figma: Ferramenta de design de interface. Utilizamos o Figma na criação dos wireframes e do template padrão do nosso site.
+* Microsoft Planner: Ferramenta de gerenciamento de tarefas e projetos. Utilizamos o Planner para a elaboração e organização do nosso quadro Kanban.
