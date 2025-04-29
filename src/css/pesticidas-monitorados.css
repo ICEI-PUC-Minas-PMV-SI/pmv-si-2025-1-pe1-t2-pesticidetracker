@@ -1,0 +1,29 @@
+.header {
+    background-color: #c1c1c1;
+    height: 72px;
+    width: 100%;
+}
+
+.pageContent {
+    padding: 24px 0;
+}
+
+.pageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+td, th {
+    vertical-align: middle;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.filterBox {
+    max-width: 30%;
+}
