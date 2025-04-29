@@ -5,13 +5,17 @@
 }
 
 .pageContent {
-    padding: 24px 0;
+    padding-top: 24px;
 }
 
 .pageHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.pageHeader h2 {
+    max-width: 50%;
 }
 
 td, th {
