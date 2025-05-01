@@ -1,0 +1,34 @@
+:root {
+    --texto: #000;
+    --background: #FAFAFB;
+    --primaria: #48FF7F;
+    --erro: #FF1B1B;
+    --sucesso: #1CFF60;
+    --aux-1: #027333;
+    --aux-2: #025928;
+    --aux-3: #8CBF3F;
+    --aux-4: #A3BF65;
+    --aux-5: #F2F2F2;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.subtitulo {
+    font-size: 24px;
+}
+
+.texto {
+    font-size: 18px;
+}
+
+.auxiliar {
+    font-size: 14px;
+}
