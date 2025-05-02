@@ -1,0 +1,26 @@
+.navbar {
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+}
+
+.custom-size {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #025928 !important;
+    padding: 0.6rem 1.4rem;
+
+}
+
+.btn {
+    height: auto;
+    max-width: 12.5rem;
+    border-radius: 5px;
+    background-color: #FAFAFB;
+    border: none !important;
+}
+
+.custom-size-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#025928 !important;
+}
