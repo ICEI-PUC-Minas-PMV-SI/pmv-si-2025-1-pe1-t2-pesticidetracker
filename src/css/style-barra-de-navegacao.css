@@ -1,26 +1,27 @@
-.navbar {
-    padding-top: 0.2rem !important;
-    padding-bottom: 0.2rem !important;
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
 .custom-size {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #025928 !important;
+    color: var(--aux-2) !important;
     padding: 0.6rem 1.4rem;
 
 }
 
-.btn {
+.custom-buttons {
     height: auto;
-    max-width: 12.5rem;
-    border-radius: 5px;
-    background-color: #FAFAFB;
+    max-width: 13rem;
+    border-radius: 5px !important;
+    background-color: var(--background);
     border: none !important;
 }
 
 .custom-size-item {
     font-size: 1.2rem;
     font-weight: bold;
-    color:#025928 !important;
+    color: var(--aux-2)!important;
 }
