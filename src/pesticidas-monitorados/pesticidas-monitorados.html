@@ -16,9 +16,102 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="../css/pesticidas-monitorados.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/style-barra-de-navegacao.css">
   </head>
   <body>
-    <div class="header"></div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <a class="navbar-brand">
+          <img
+            src="../images/pesticide-tracker-logo 1.png"
+            width="72"
+            height="74"
+            alt="Pesticide Tracker"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#conteudoNavbarSuportado"
+          aria-controls="conteudoNavbarSuportado"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+                href="#"
+                role="button"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+                href="#"
+                id="navbarDropdownProduto"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Produto
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownProduto"
+              >
+                <a class="dropdown-item custom-size-item" href="#">Buscar</a>
+                <a class="dropdown-item custom-size-item" href="#">Listar</a>
+                <a class="dropdown-item custom-size-item" href="#">Detalhar</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+                href="#"
+                id="navbarDropdownPesticidas"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pesticidas
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownPesticidas"
+              >
+                <a class="dropdown-item custom-size-item" href="#">Buscar</a>
+                <a class="dropdown-item custom-size-item" href="#">Detalhar</a>
+                <a class="dropdown-item custom-size-item" href="#">Monitorar</a>
+                <a class="dropdown-item custom-size-item" href="#"
+                  >Listar <br />
+                  Monitoramentos</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+                href="#"
+                role="button"
+                >Usuário</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <div class="pageContent container md:container-lg md:px-0">
       <div class="pageHeader">
