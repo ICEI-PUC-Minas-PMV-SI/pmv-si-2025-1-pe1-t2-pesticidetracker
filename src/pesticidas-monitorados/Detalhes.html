@@ -10,7 +10,120 @@
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
     crossorigin="anonymous"
   />
-  <style>
+  
+</head>
+<body>
+  <!-- Barra de navegação -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+      <a class="navbar-brand" href="#">
+        <img src="https://via.placeholder.com/72x74" width="72" height="74" alt="Pesticide Tracker" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="#"
+              id="navbarDropdownProduto" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Produto
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownProduto">
+              <a class="dropdown-item custom-size-item" href="#">Buscar</a>
+              <a class="dropdown-item custom-size-item" href="#">Listar</a>
+              <a class="dropdown-item custom-size-item" href="#">Detalhar</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="#"
+              id="navbarDropdownPesticidas" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pesticidas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPesticidas">
+              <a class="dropdown-item custom-size-item" href="#">Buscar</a>
+              <a class="dropdown-item custom-size-item" href="#">Detalhar</a>
+              <a class="dropdown-item custom-size-item" href="#">Monitorar</a>
+              <a class="dropdown-item custom-size-item" href="#">Listar<br>Monitoramentos</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="#">Usuário</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <!-- Detalhamento estilo cartão -->
+    <section class="pesticide-card">
+      <h5>Informações do pesticida</h5>
+      <div class="pesticide-info">
+        <div>Ingrediente ativo ou nome comum:</div><div>Acefato (Acephate)</div>
+        <div>Nome químico:</div><div>O,S-dimethyl acetylphosphoramidothioate</div>
+        <div>Grupo químico:</div><div>Organofosforado</div>
+        <div>Classe:</div><div>Inseticida e acaricida</div>
+        <div>Fórmula bruta:</div><div>C4H10NO3PS</div>
+        <div>Aprovado em:</div><div>Brasil, Estados Unidos, Canadá e Japão</div>
+        <div>Banido em:</div><div>União Europeia</div>
+      </div>
+      <button class="monitor-btn">Monitorar</button>
+    </section>
+  </main>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
     body {
       font-family: sans-serif;
       background-color: #ffffff;
@@ -142,74 +255,3 @@
       background-color: #0f5836;
     }
   </style>
-</head>
-<body>
-  <!-- Barra de navegação -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-      <a class="navbar-brand" href="#">
-        <img src="https://via.placeholder.com/72x74" width="72" height="74" alt="Pesticide Tracker" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado"
-        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item active">
-            <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="#"
-              id="navbarDropdownProduto" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Produto
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownProduto">
-              <a class="dropdown-item custom-size-item" href="#">Buscar</a>
-              <a class="dropdown-item custom-size-item" href="#">Listar</a>
-              <a class="dropdown-item custom-size-item" href="#">Detalhar</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="#"
-              id="navbarDropdownPesticidas" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Pesticidas
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownPesticidas">
-              <a class="dropdown-item custom-size-item" href="#">Buscar</a>
-              <a class="dropdown-item custom-size-item" href="#">Detalhar</a>
-              <a class="dropdown-item custom-size-item" href="#">Monitorar</a>
-              <a class="dropdown-item custom-size-item" href="#">Listar<br>Monitoramentos</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="#">Usuário</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-    <!-- Detalhamento estilo cartão -->
-    <section class="pesticide-card">
-      <h5>Informações do pesticida</h5>
-      <div class="pesticide-info">
-        <div>Ingrediente ativo ou nome comum:</div><div>Acefato (Acephate)</div>
-        <div>Nome químico:</div><div>O,S-dimethyl acetylphosphoramidothioate</div>
-        <div>Grupo químico:</div><div>Organofosforado</div>
-        <div>Classe:</div><div>Inseticida e acaricida</div>
-        <div>Fórmula bruta:</div><div>C4H10NO3PS</div>
-        <div>Aprovado em:</div><div>Brasil, Estados Unidos, Canadá e Japão</div>
-        <div>Banido em:</div><div>União Europeia</div>
-      </div>
-      <button class="monitor-btn">Monitorar</button>
-    </section>
-  </main>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"
-  ></script>
-</body>
-</html>
