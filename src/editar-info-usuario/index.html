@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PesticideTracker</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="./editar-info-usuario.css" />
+  </head>
+  <body>
+    <main class="paginaEditarInfoUser">
+      <form class="card">
+        <h1 class="titulo">Editar Informações</h1>
+        <div class="nomeCompleto">
+          <input 
+            class="entradaTexto" 
+            type="text" name="nome" 
+            id="nome"  
+            placeholder="nome" 
+            value="José"
+          >
+
+          <input 
+            class="entradaTexto"
+            type="text" 
+            name="sobrenome" 
+            id="sobrenome"  
+            placeholder="sobrenome" 
+            value="Silva"
+          >
+        </div>
+
+        <input 
+          class="entradaTexto" 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="Email" 
+          value="email@email.com"
+        >
+
+        <input 
+          class="entradaTexto" 
+          type="tel" 
+          name="celular" 
+          id="celular" 
+          placeholder="Celular" 
+          value="999999999"
+        >
+        <span class="botoes">
+          <button 
+            class="texto botaoEditar">
+            Editar
+          </button>
+          <button 
+            class="texto botaoCancelar">
+            Cancelar
+          </button>
+        </span>
+      </form>
+    </main>
+  </body>
+</html>
