@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PesticideTracker</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="paginaCadastroProduto">
+      <form class="cadastro">
+
+        <div class="label-e-campo">
+          <span class="label auxiliar">Produto</span>
+          <input class="campo" type="text" name="produto" id="produto" placeholder="Ex:café, soja ...">
+        </div>
+
+        <div class="datas">
+          <div class="label-e-campo">
+            <span class="label auxiliar">Data de plantio</span>
+            <input class="campo" type="text" name="dataPlantio" id="dataPlantio" placeholder="Ex: 10/10/10">
+          </div>
+
+          <div class="label-e-campo">
+            <span class="label auxiliar">Data de colheita</span>
+            <input class="campo" type="text" name="dataColheita" id="dataColheita" placeholder="Ex: 11/11/11">
+          </div>
+
+        </div>
+
+        <div class="label-e-campo">
+          <span class="label auxiliar">Pesticidas utilizados</span>
+          <input class="campo" type="text" name="pesticidas" id="pesticidas" placeholder="Ex:Benzyladenine, Acetamiprid ...">
+        </div>
+
+        <div class="label-e-campo">
+          <span class="label auxiliar">Mercados</span>
+          <input class="campo" type="text" name="mercados" id="mercados" placeholder="Ex:União Europeia,EUA, Japão ...">
+        </div>
+
+
+        <button class="texto botaoAdicionarPorduto">Cadastrar Produto</button>
+      </form>
+
+    </main>
+
+  </body>
+</html>
