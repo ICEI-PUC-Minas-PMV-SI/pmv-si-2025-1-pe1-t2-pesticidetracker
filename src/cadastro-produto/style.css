@@ -80,7 +80,38 @@ body{
     font-weight: 400;
     line-height: normal;
 }
+.campoAdicionarPesticida{
+    width: 100%;
+    display: flex;
+}
 
+.campoAdicionarPesticida .campo{
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #AAA;
+}
+
+.button-adicionar-pesticida{
+    display: inline-flex;
+    height: 100%;
+    width: 36px;
+    padding: 4px 11px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-radius: 0px 8px 8px 0px;
+    border-top: 1px solid #AAA;
+    border-right: 1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+    border-left: 0px;
+
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 .botaoAdicionarPorduto{
     display: flex;
