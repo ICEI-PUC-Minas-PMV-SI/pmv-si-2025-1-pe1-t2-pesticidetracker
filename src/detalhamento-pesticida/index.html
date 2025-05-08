@@ -5,53 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Detalhamento do Pesticida</title>
   <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+
   <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-  crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css" />
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/style-barra-de-navegacao.css">
 </head>
 <body>
-  <div class="container mt-5">
-    <div class="card mx-auto">
-      <div class="card-body">
-        <h5 class="card-title text-center mb-4">Informações do Pesticida</h5>
-        <div class="row info-item mb-3">
-          <div class="col-5 label">Ingrediente ativo ou nome comum:</div>
-          <div class="col-7 value text-end">Acefato (Acephate)</div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <a class="navbar-brand">
+            <img src="../images/pesticide-tracker-logo 1.png" width="72" height="74" alt="Pesticide Tracker">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+               
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href=".." role="button"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="../lista-produtos/index.html" role="button">Produtos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="../pesticidas-monitorados/Buscar-Pesticidas.html" id="navbarDropdownPesticidas" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pesticidas
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdownPesticidas">
+                  <a class="dropdown-item custom-size-item" href="../Buscar-Pesticidas/index.html">Buscar</a>
+                  <a class="dropdown-item custom-size-item" href="../pesticidas-monitorados/index.html">Listar <br> Monitoramentos</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="../visualizar-info-usuario/index.html" role="button">Usuário</a>
+            </li>
+          </ul>
         </div>
-        <div class="row info-item mb-3">
-          <div class="col-5 label">Nome químico:</div>
-          <div class="col-7 value text-end">O,S-dimethyl acetylphosphoramidothioate</div>
-        </div>
-        <div class="row info-item mb-3">
-          <div class="col-5 label">Grupo químico:</div>
-          <div class="col-7 value text-end">Organofosforado</div>
-        </div>
-        <div class="row info-item mb-3">
-          <div class="col-5 label">Classe:</div>
-          <div class="col-7 value text-end">Inseticida e acaricida</div>
-        </div>
-        <div class="row info-item mb-3">
-          <div class="col-5 label">Fórmula bruta:</div>
-          <div class="col-7 value text-end">C4H10NO3PS</div>
-        </div>
-        <div class="row info-item mb-3">
-          <div class="col-5 label">Aprovado em:</div>
-          <div class="col-7 value text-end">Brasil, Estados Unidos, Canadá e Japão</div>
-        </div>
-        <div class="row info-item mb-3">
-          <div class="col-5 label">Banido em:</div>
-          <div class="col-7 value text-end">União Europeia</div>
-        </div>
-        <div class="d-flex justify-content-center mt-4">
-          <button class="btn btn-success btn-sm" style="width: 120px;">Monitorar</button>
-        </div>
+      </nav>
+
+  </header>
+
+  <main class="page-detalhamento-pesticida">
+
+    <div class="container mt-5">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title text-center mb-4">Informações do Pesticida</h5>
+          <div class="row info-item mb-3">
+            <div class="col-5 label">Ingrediente ativo ou nome comum:</div>
+            <div class="col-7 value text-end">Acefato (Acephate)</div>
+          </div>
+          <div class="row info-item mb-3">
+            <div class="col-5 label">Nome químico:</div>
+            <div class="col-7 value text-end">O,S-dimethyl acetylphosphoramidothioate</div>
+          </div>
+          <div class="row info-item mb-3">
+            <div class="col-5 label">Grupo químico:</div>
+            <div class="col-7 value text-end">Organofosforado</div>
+          </div>
+          <div class="row info-item mb-3">
+            <div class="col-5 label">Classe:</div>
+            <div class="col-7 value text-end">Inseticida e acaricida</div>
+          </div>
+          <div class="row info-item mb-3">
+            <div class="col-5 label">Fórmula bruta:</div>
+            <div class="col-7 value text-end">C4H10NO3PS</div>
+          </div>
+          <div class="row info-item mb-3">
+            <div class="col-5 label">Aprovado em:</div>
+            <div class="col-7 value text-end">Brasil, Estados Unidos, Canadá e Japão</div>
+          </div>
+          <div class="row info-item mb-3">
+            <div class="col-5 label">Banido em:</div>
+            <div class="col-7 value text-end">União Europeia</div>
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button class="btn btn-success btn-sm" style="width: 120px;">Monitorar</button>
+          </div>
+          </div>
       </div>
     </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+  </main>
+  
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+  crossorigin="anonymous"
+  ></script>
 </body>
 </html>

@@ -17,10 +17,77 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./barra-de-navegacao-homepage/style.css">
   </head>
   <body>
-    <h1>PesticideTracker</h1>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-homepage">
+          <a class="navbar-brand navbar-brand-homepage"
+           href=".">
+              <img src="../images/pesticide-tracker-logo 1.png" width="72" height="74" alt="Pesticide Tracker">
+              <h1 class="navbar-brand-homepage-name">Pesticide Tracker</h1>
+          </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                 
+          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav ms-auto links-navbar-homepage">
+                  
+              <li class="nav-item active link-navbar-homepage">
+                <a 
+                  class="nav-link 
+                  btn-outline-secondary 
+                  mx-1 
+                  rounded-pill 
+                  custom-size 
+                  custom-buttons
+                  link-navbar-homepage__a
+                  " 
+                  href="./cadastro-usuario/" role="button"> 
+                  Cadastrar nova conta
+                </a>
+              </li>
+
+              <li class="nav-item link-navbar-homepage">
+                <a class="nav-link 
+                btn-outline-secondary 
+                mx-1 
+                rounded-pill 
+                custom-size 
+                custom-buttons
+                link-navbar-homepage__a
+                " 
+                  href="./login/" role="button">
+                  Login
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+  </header>
+
+    <main class="mainContentHomepage">
+
+      <div class="textos">
+        <h1 class="textos__titulo">Quebre as barreiras 
+          do seu negócio.
+        </h1>
+        <p class="textos__paragrafo texto">
+          A Pesticide Tracker ajuda pequenos e médios produtores rurais no
+          processo de entrada no mercado internacional. Nossa missão é fornecer
+          aos nossos usuários informações valiosas sobre o uso de pesticidas em 
+          mercados estrangeiros e como se adequar às exigências desses mercados.
+        </p>
+      </div>
+      <img class="mainContentHomepage__image" width="757px" height="259px" src="./images/img-homepage.png" alt="">
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"

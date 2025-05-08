@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.navbar-homepage{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #FFF;
+}
+
+.navbar-brand-homepage{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar-brand-homepage-name{
+    color: #196040;
+    font-family: "Roboto";
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.links-navbar-homepage{
+    display:flex;
+    flex-direction: row;
+    gap: 53px;
+    padding-right: 45px;
+}
+
+.link-navbar-homepage{
+    display: inline-flex;
+    padding: 11px 27px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 24px;
+    border: 1px solid #000;
+    background: #196040;
+
+}
+.link-navbar-homepage__a{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;    
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
