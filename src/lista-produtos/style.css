@@ -1,0 +1,20 @@
+.custom-btn {
+    background-color: var(--primaria);
+    border-color: var(--texto);
+    color: var(--texto);
+}
+
+.custom-btn:hover {
+    opacity: 0.95;
+    background-color: var(--primaria);
+    border-color: var(--texto);
+    color: var(--texto);
+}
+
+.custom-pagination a {
+    color: var(--texto);
+}
+
+.custom-pagination a:hover {
+    color: var(--aux-2);
+}
