@@ -3,63 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Detalhes do Produto - Pesticide Tracker</title>
+  <title>Pesticide Tracker</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- Bootstrap CSS -->
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./style.css">
-  
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/style-barra-de-navegacao.css">
 </head>
 <body>
 
+  <!-- BARRA DE NAVEGAÇÃO -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <a class="navbar-brand">
+            <img src="../images/pesticide-tracker-logo 1.png" width="72" height="74" alt="Pesticide Tracker">
+        </a>
+        
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#conteudoNavbarSuportado" 
+          aria-controls="conteudoNavbarSuportado" 
+          aria-expanded="false" 
+          aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href=".." role="button"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="../lista-produtos/index.html" role="button">Produtos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="../pesticidas-monitorados/Buscar-Pesticidas.html" id="navbarDropdownPesticidas" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pesticidas
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdownPesticidas">
+                  <a class="dropdown-item custom-size-item" href="../Buscar-Pesticidas/index.html">Buscar</a>
+                  <a class="dropdown-item custom-size-item" href="../pesticidas-monitorados/index.html">Listar <br> Monitoramentos</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="../visualizar-info-usuario/index.html" role="button">Usuário</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
   <!-- DETALHAMENTO DO PRODUTO -->
-  <div class="product-card">
-    <h5>Informações do produto</h5>
+  <main class="page-detalhes-produtos">
 
-    <div class="info-grid">
-      <div>Nome:</div><div>Soja</div>
-      <div>Data de plantio:</div><div>01/01/2021</div>
-      <div>Data de colheita:</div><div>06/06/2021</div>
-      <div>Pesticidas utilizados:</div><div>Acefato e Acifluorfem</div>
-      <div>Pode ser comercializado em:</div><div>Japão e Brasil</div>
+    <div class="product-card">
+      <h1 class="page-detalhes-produtos__titulo">Informações do produto</h1>
+
+      <div class="campoValor">
+        <div class="campo">Nome:</div>
+        <div class="valor">Soja</div>
+      </div>
+      <div class="campoValor">
+        <div class="campo">Data de plantio:</div>
+        <div class="valor">01/01/2021</div>
+      </div>
+
+      <div class="campoValor">
+        <div class="campo">Data de plantio:</div>
+        <div class="valor">01/01/2021</div>
+      </div>
+
+      <div class="campoValor">
+        <div class="campo">Data de colheita:</div>
+        <div class="valor">06/06/2021</div>
+      </div>
+
+      <div class="campoValor">
+        <div class="campo">Pesticidas utilizados:</div>
+        <div class="valor">Acefato e Acifluorfem</div>
+      </div>
+
+
+      <div class="campoValor">
+        <div class="campo">Pode ser comercializado em:</div>
+        <div class="valor">Japão e Brasil</div>
+      </div>
+
+
+      <table class="approval-table">
+        <thead>
+          <tr>
+            <th>Pesticida utilizado</th>
+            <th>Brasil</th>
+            <th>Japão</th>
+            <th>União Europeia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Acefato</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Acifluorfem</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+          </tr>
+          <tr>
+            <td><strong>Pode ser vendido</strong></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-    <table class="approval-table">
-      <thead>
-        <tr>
-          <th>Pesticida utilizado</th>
-          <th>Brasil</th>
-          <th>Japão</th>
-          <th>União Europeia</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Acefato</td>
-          <td><span class="check">✓</span></td>
-          <td><span class="check">✓</span></td>
-          <td><span class="check">✓</span></td>
-        </tr>
-        <tr>
-          <td>Acifluorfem</td>
-          <td><span class="check">✓</span></td>
-          <td><span class="check">✓</span></td>
-          <td><span class="cross">✗</span></td>
-        </tr>
-        <tr>
-          <td><strong>Pode ser vendido</strong></td>
-          <td><span class="check">✓</span></td>
-          <td><span class="check">✓</span></td>
-          <td><span class="cross">✗</span></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  </main>
 
   <!-- Bootstrap Bundle JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+  crossorigin="anonymous"
+  ></script>
 </body>
 </html>

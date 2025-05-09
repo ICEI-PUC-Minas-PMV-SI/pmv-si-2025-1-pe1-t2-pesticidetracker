@@ -19,13 +19,13 @@ body{
 }
 
 
-.card{
+.paginaVisualizarInfoUser__card{
     display: flex;
     padding: 30px 55px;
     width: 100%;
     max-width: 705px;
     height: 100%;
-    max-height: 400px;
+    max-height: fit-content;
     flex-direction: column;
     align-items: flex-start;
     gap: 46px;
@@ -49,15 +49,23 @@ body{
     background: #196040;
 }
 
-.header, .campo{
+.header{
     display: flex;
     width: 100%;
     height:min-content;
     justify-content: space-between;
     align-items: center;
 }
+.campo{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: baseline;
+    justify-content: space-between;
+}
 
 .label, .dado{
     height: min-content;
+    margin: 0;
     width: fit-content;
 }

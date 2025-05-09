@@ -1,34 +1,35 @@
-body {
-  background-color: #fff;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
 }
 
-.custom-navbar {
-  background-color: #f8f9fa;
-  padding: 0.8rem 2rem;
+body{
+  width: 100%;
+  min-height: 100vh;
 }
 
-.custom-buttons {
-  border-color: #2c3e50;
-  color: #2c3e50;
+.page-detalhes-produtos{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.custom-buttons:hover {
-  background-color: #2c3e50;
-  color: #fff;
-}
-
-.custom-size {
-  padding: 5px 15px;
-  font-size: 0.95rem;
-}
-
-.custom-size-item {
-  font-size: 0.9rem;
+.page-detalhes-produtos__titulo{
+  color: #000;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .product-card {
+  width: 100%;
   max-width: 800px;
   margin: 40px auto;
   padding: 30px;
@@ -36,6 +37,11 @@ body {
   border-radius: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .product-card h5 {
@@ -81,4 +87,27 @@ body {
 .cross {
   color: red;
   font-size: 20px;
+}
+
+.campoValor{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.campo, .valor{
+  color: #000;
+  font-family: 'Roboto',sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.campo{
+  font-size: 24px;
+}
+
+.valor{
+  font-size: 18px;
 }
