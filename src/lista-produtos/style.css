@@ -11,10 +11,17 @@
     color: var(--texto);
 }
 
-.custom-pagination a {
+.custom-pagination .active .page-link {
+    background-color: var(--primaria);
+    color: var(--texto);
+    border-color: var(--primaria);
+}
+
+.custom-pagination .page-link {
     color: var(--texto);
 }
 
-.custom-pagination a:hover {
+.custom-pagination .page-link:hover {
     color: var(--aux-2);
+    cursor: pointer;
 }
