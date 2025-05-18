@@ -162,7 +162,3 @@ function criarPaginacao(pagina, totalDeItems, totalDeItensPorPagina) {
   html += "</ul></nav>";
   return html;
 }
-
-function paginar(e) {
-  console.log(e);
-}
