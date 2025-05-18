@@ -123,193 +123,47 @@
       <form class="row">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <label for="nome">Nome</label>
-          <input type="text" class="form-control" id="nome" />
+          <input type="text" class="form-control" id="nome" name="nome" />
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <label for="dataPlantio">Data de plantio</label>
-          <input type="text" class="form-control" id="dataPlantio" />
+          <input
+            type="text"
+            class="form-control"
+            id="dataPlantio"
+            name="dataPlantio"
+            placeholder="dd/mm/aaaa"
+          />
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <label for="dataColheita">Data de colheita</label>
-          <input type="text" class="form-control" id="dataColheita" />
+          <input
+            type="text"
+            class="form-control"
+            id="dataColheita"
+            name="dataColheita"
+            placeholder="dd/mm/aaaa"
+          />
         </div>
         <div
           class="col-sm-12 col-md-6 col-lg-3 d-flex align-items-end column-gap-2"
         >
           <button
             type="button"
-            class="flex-grow-1 btn btn-primary rounded-pill custom-btn"
+            class="flex-grow-1 btn btn-primary rounded-pill custom-btn btn-buscar"
           >
             <span class="me-1">Buscar</span>
             <i class="bi bi-search"></i>
           </button>
-          <button type="button" class="flex-grow-1 btn btn-light rounded-pill">
+          <button
+            type="button"
+            class="flex-grow-1 btn btn-light rounded-pill btn-cancelar"
+          >
             <span class="me-1">Cancelar</span>
             <i class="bi bi-x"></i>
           </button>
         </div>
       </form>
-      <table class="table table-striped align-middle mt-4">
-        <thead>
-          <tr>
-            <th class="w-25">Nome</th>
-            <th class="w-25">Data de plantio</th>
-            <th class="w-25">Data de colheita</th>
-            <th class="w-25"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>Café</td>
-            <td>01/01/2025</td>
-            <td>31/01/2025</td>
-            <td>
-              <a
-                href="../Detalhes-Produtos/index.html"
-                class="btn btn-primary btn-sm rounded-pill custom-btn"
-              >
-                <span class="me-1">Ver detalhes</span>
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <nav class="d-flex justify-content-center mt-4">
-        <ul class="pagination custom-pagination">
-          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
-        </ul>
-      </nav>
     </main>
 
     <script
@@ -317,5 +171,6 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
