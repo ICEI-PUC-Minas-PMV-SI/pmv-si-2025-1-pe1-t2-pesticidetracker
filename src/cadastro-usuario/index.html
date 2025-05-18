@@ -13,7 +13,6 @@
       rel="stylesheet"
     />
 
-    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,91 +21,123 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../barra-de-navegacao-homepage/style.css">
+    <link rel="stylesheet" href="../barra-de-navegacao-homepage/style.css" />
     <link rel="stylesheet" href="../css/reset.css" />
   </head>
   <body>
-
     <header>
       <nav class="navbar navbar-expand-lg navbar-light navbar-homepage">
-          <a class="navbar-brand navbar-brand-homepage"
-          href="../index.html">
-              <img src="../images/pesticide-tracker-logo 1.png" width="72" height="74" alt="Pesticide Tracker">
-              <h1 class="navbar-brand-homepage-name">Pesticide Tracker</h1>
-          </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-                 
-          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav ms-auto links-navbar-homepage">
-                  
-              <li class="nav-item active link-navbar-homepage">
-                <a 
-                  class="nav-link 
-                  btn-outline-secondary 
-                  mx-1 
-                  rounded-pill 
-                  custom-size 
-                  custom-buttons
-                  link-navbar-homepage__a
-                  " 
-                  href="../cadastro-usuario/" role="button"> 
-                  Cadastrar nova conta
-                </a>
-              </li>
+        <a class="navbar-brand navbar-brand-homepage" href="../index.html">
+          <img
+            src="../images/pesticide-tracker-logo 1.png"
+            width="72"
+            height="74"
+            alt="Pesticide Tracker"
+          />
+          <h1 class="navbar-brand-homepage-name">Pesticide Tracker</h1>
+        </a>
 
-              <li class="nav-item link-navbar-homepage">
-                <a class="nav-link 
-                btn-outline-secondary 
-                mx-1 
-                rounded-pill 
-                custom-size 
-                custom-buttons
-                link-navbar-homepage__a
-                " 
-                  href="../login/" role="button">
-                  Login
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#conteudoNavbarSuportado"
+          aria-controls="conteudoNavbarSuportado"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  </header>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav ms-auto links-navbar-homepage">
+            <li class="nav-item active link-navbar-homepage">
+              <a
+                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons link-navbar-homepage__a"
+                href="../cadastro-usuario/"
+                role="button"
+              >
+                Cadastrar nova conta
+              </a>
+            </li>
+
+            <li class="nav-item link-navbar-homepage">
+              <a
+                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons link-navbar-homepage__a"
+                href="../login/"
+                role="button"
+              >
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <main class="paginaCadastro">
       <form class="cadastro">
         <h1 class="titulo">Adicionar conta</h1>
         <div class="nomeCompleto">
-          <input class="entradaTexto" type="text" name="nome" id="nome" placeholder="Nome">
-          <input class="entradaTexto" type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+          <input
+            class="entradaTexto"
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome"
+            required
+          />
+          <input
+            class="entradaTexto"
+            type="text"
+            name="sobrenome"
+            id="sobrenome"
+            placeholder="Sobrenome"
+            required
+          />
         </div>
-        <input class="entradaTexto" type="tel" name="celular" id="celular" placeholder="Celular">
-        <input class="entradaTexto" type="email" name="email" id="email" placeholder="Email">
-        <input class="entradaTexto" type="password" name="senha" id="senha" placeholder="Senha">
+        <input
+          class="entradaTexto"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="Celular (XX) XXXXX-XXXX"
+          pattern="^\(?\d{2}\)?\s?\d{4,5}\s?-?\s?\d{4}$"
+          required
+        />
+        <input
+          class="entradaTexto"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          class="entradaTexto"
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Senha"
+          required
+        />
 
         <button class="botaoAdicionarConta texto">Adicionar Conta</button>
 
         <h2 class="subtitulo">Ou</h2>
 
-
-          <a
-
-          class="botaoIrLogin texto"
-          href="../login/"
-          >Utilizar conta cadastrada</a>
-
+        <a class="botaoIrLogin texto" href="../login/"
+          >Utilizar conta cadastrada</a
+        >
       </form>
-
     </main>
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
