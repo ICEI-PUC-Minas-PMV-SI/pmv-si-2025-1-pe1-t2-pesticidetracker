@@ -1,8 +1,8 @@
-const list = `[
+const list = JSON.parse(`[
 {"id": "1","nome": "Produto 1","pesticidas": [],"dataColheita": "01/05/2025","dataPlatio": "01/04/2025","mercados": []},
 {"id": "2","nome": "Produto 2","pesticidas": [],"dataColheita": "01/05/2025","dataPlatio": "01/04/2025","mercados": []},
 {"id": "3","nome": "Produto 3","pesticidas": [],"dataColheita": "01/05/2025","dataPlatio": "01/04/2025","mercados": []}
-]`;
+]`);
 
 const form = document.querySelector("form");
 const btnBuscar = document.querySelector(".btn-buscar");
@@ -45,7 +45,7 @@ function buscarDadosFiltro() {
 }
 
 function filtrarDados(filtro) {
-  const dados = JSON.parse(list);
+  const dados = list;
 
   const dadosFiltrados = dados.filter((item) => {
     if (
