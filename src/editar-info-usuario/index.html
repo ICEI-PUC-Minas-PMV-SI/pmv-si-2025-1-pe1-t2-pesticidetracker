@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../css/style-barra-de-navegacao.css">
-
+    
   </head>
   <body>
 
@@ -78,8 +78,8 @@
             class="entradaTexto" 
             type="text" name="nome" 
             id="nome"  
-            placeholder="nome" 
-            value="José"
+            placeholder="Nome" 
+
           >
 
           <input 
@@ -87,8 +87,7 @@
             type="text" 
             name="sobrenome" 
             id="sobrenome"  
-            placeholder="sobrenome" 
-            value="Silva"
+            placeholder="Sobrenome" 
           >
         </div>
 
@@ -98,22 +97,18 @@
           name="email" 
           id="email" 
           placeholder="Email" 
-          value="email@email.com"
         >
 
         <input 
           class="entradaTexto" 
           type="tel" 
           name="celular" 
-          id="celular" 
+          id="tel" 
+          pattern="^\(?\d{2}\)?\s?\d{4,5}\s?-?\s?\d{4}$"
           placeholder="Celular" 
-          value="999999999"
         >
         <span class="botoes">
-          <button 
-            class="texto botaoEditar">
-            Editar
-          </button>
+          <input type="submit" class="texto botaoEditar" value="Editar" >
           <button 
             class="texto botaoCancelar">
             Cancelar
@@ -130,5 +125,7 @@
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"
     ></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
