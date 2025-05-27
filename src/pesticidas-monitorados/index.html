@@ -1,240 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PesticideTracker</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/style-barra-de-navegacao.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-        <a class="navbar-brand">
-          <img
-            src="../images/pesticide-tracker-logo 1.png"
-            width="72"
-            height="74"
-            alt="Pesticide Tracker"
-          />
-        </a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PesticideTracker</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/style-barra-de-navegacao.css" />
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#conteudoNavbarSuportado"
-          aria-controls="conteudoNavbarSuportado"
-          aria-expanded="false"
-          aria-label="Alterna navegação"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+      <a class="navbar-brand">
+        <img src="../images/pesticide-tracker-logo 1.png" width="72" height="74" alt="Pesticide Tracker" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a
-                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
-                href=".."
-                role="button"
-              >
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
-                href="../lista-produtos/index.html"
-                role="button"
-                >Produtos</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
-                href="../pesticidas-monitorados/Buscar-Pesticidas.html"
-                id="navbarDropdownPesticidas"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Pesticidas
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownPesticidas"
-              >
-                <a
-                  class="dropdown-item custom-size-item"
-                  href="../Buscar-Pesticidas/index.html"
-                  >Buscar</a
-                >
-                <a
-                  class="dropdown-item custom-size-item"
-                  href="../pesticidas-monitorados/index.html"
-                  >Listar <br />
-                  Monitoramentos</a
-                >
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
-                href="../visualizar-info-usuario/index.html"
-                role="button"
-                >Usuário</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <div class="pageContent container md:container-lg md:px-0">
-      <div class="pageHeader">
-        <h2>Pesticidas Monitorados</h2>
-        <button class="btn btn-primary">+ Monitorar</button>
-      </div>
-
-      <div class="filters">
-        <div class="mb-3 filterBox">
-          <label for="name" class="form-label">Nome</label>
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              aria-describedby="basic-addon3 basic-addon4"
-            />
-          </div>
-        </div>
-        <div class="mb-3 filterBox">
-          <label for="class" class="form-label">Classe</label>
-          <select
-            name="class"
-            class="form-select"
-            aria-label="Default select example"
-          >
-            <option selected>Selecione uma classe</option>
-            <option value="class1">Classe 1</option>
-            <option value="class2">Classe 2</option>
-            <option value="class3">Classe 3</option>
-          </select>
-        </div>
-
-        <div class="mb-3 filterBox">
-          <label for="region" class="form-label">Regiões</label>
-          <select
-            name="region"
-            class="form-select"
-            aria-label="Default select example"
-          >
-            <option selected>Selecione uma região</option>
-            <option value="eua">EUA</option>
-            <option value="japao">Japão</option>
-            <option value="europa">Europa</option>
-          </select>
-        </div>
-      </div>
-
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Regiões Monitoradas</th>
-            <th scope="col">Alerta criado em</th>
-            <th scope="col">Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Pesticida 1</td>
-            <td>Japão, EUA, Europa</td>
-            <td>24/04/2025</td>
-            <td>
-              <button class="btn btn-danger">
-                <i class="bi bi-trash"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Pesticida 2</td>
-            <td>Japão, EUA, Europa</td>
-            <td>24/04/2025</td>
-            <td>
-              <button class="btn btn-danger">
-                <i class="bi bi-trash"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Pesticida 3</td>
-            <td>Japão, EUA, Europa</td>
-            <td>24/04/2025</td>
-            <td>
-              <button class="btn btn-danger">
-                <i class="bi bi-trash"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Pesticida 4</td>
-            <td>Japão, EUA, Europa</td>
-            <td>24/04/2025</td>
-            <td>
-              <button class="btn btn-danger">
-                <i class="bi bi-trash"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Pesticida 5</td>
-            <td>Japão, EUA, Europa</td>
-            <td>24/04/2025</td>
-            <td>
-              <button class="btn btn-danger">
-                <i class="bi bi-trash"></i>
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href=".."
+              role="button">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+              href="../lista-produtos/index.html" role="button">Produtos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+              href="../pesticidas-monitorados/Buscar-Pesticidas.html" id="navbarDropdownPesticidas" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pesticidas</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPesticidas">
+              <a class="dropdown-item custom-size-item" href="../Buscar-Pesticidas/index.html">Buscar</a>
+              <a class="dropdown-item custom-size-item" href="../pesticidas-monitorados/index.html">Listar <br />
+                Monitoramentos</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+              href="../visualizar-info-usuario/index.html" role="button">Usuário</a>
+          </li>
         </ul>
-      </nav>
+      </div>
+    </nav>
+  </header>
+
+  <div class="pageContent container">
+    <div class="pageHeader d-flex justify-content-between align-items-center mt-4">
+      <h2>Pesticidas Monitorados</h2>
+      <button class="btn btn-primary">+ Monitorar</button>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div class="filters row mt-4">
+      <div class="mb-3 col-md-4">
+        <label for="name" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="name" placeholder="Buscar por nome" />
+      </div>
+      <div class="mb-3 col-md-4">
+        <label for="class" class="form-label">Classe</label>
+        <select name="class" class="form-select">
+          <option selected>Selecione uma classe</option>
+          <option value="Classe 1">Classe 1</option>
+          <option value="Classe 2">Classe 2</option>
+          <option value="Classe 3">Classe 3</option>
+        </select>
+      </div>
+      <div class="mb-3 col-md-4">
+        <label for="region" class="form-label">Regiões</label>
+        <select name="region" class="form-select">
+          <option selected>Selecione uma região</option>
+          <option value="EUA">EUA</option>
+          <option value="Japão">Japão</option>
+          <option value="Europa">Europa</option>
+        </select>
+      </div>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Regiões Monitoradas</th>
+          <th scope="col">Alerta criado em</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-tabela">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
 </html>
