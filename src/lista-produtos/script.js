@@ -1,11 +1,6 @@
 const list = localStorage.getItem("produtos")
   ? JSON.parse(localStorage.getItem("produtos"))
   : [];
-`[
-{"id": "1","nome": "Produto 1","pesticidas": [],"dataColheita": "01/05/2025","dataPlatio": "01/04/2025","mercados": []},
-{"id": "2","nome": "Produto 2","pesticidas": [],"dataColheita": "01/05/2025","dataPlatio": "01/04/2025","mercados": []},
-{"id": "3","nome": "Produto 3","pesticidas": [],"dataColheita": "01/05/2025","dataPlatio": "01/04/2025","mercados": []}
-]`;
 
 const form = document.querySelector("form");
 const btnBuscar = document.querySelector(".btn-buscar");
@@ -14,6 +9,8 @@ const tabelaContainer = document.getElementById("tabela");
 const paginacaoContainer = document.getElementById("paginacao");
 const totalDeItensPorPagina = 10;
 let pagina = 1;
+
+adicionarMascaraData();
 
 btnBuscar.addEventListener("click", () => {
   pagina = 1;
@@ -164,4 +161,21 @@ function criarPaginacao(pagina, totalDeItems, totalDeItensPorPagina) {
 
   html += "</ul></nav>";
   return html;
+}
+
+function adicionarMascaraData() {
+  document.querySelectorAll(".data").forEach((field) => {
+    field.addEventListener("input", function (e) {
+      let value = e.target.value.replace(/\D/g, "");
+
+      if (value.length > 2) {
+        value = value.slice(0, 2) + "/" + value.slice(2);
+      }
+      if (value.length > 5) {
+        value = value.slice(0, 5) + "/" + value.slice(5, 9);
+      }
+
+      e.target.value = value;
+    });
+  });
 }
