@@ -1,8 +1,11 @@
-const list = JSON.parse(`[
+const list = localStorage.getItem("produtos")
+  ? JSON.parse(localStorage.getItem("produtos"))
+  : [];
+`[
 {"id": "1","nome": "Produto 1","pesticidas": [],"dataColheita": "01/05/2025","dataPlatio": "01/04/2025","mercados": []},
 {"id": "2","nome": "Produto 2","pesticidas": [],"dataColheita": "01/05/2025","dataPlatio": "01/04/2025","mercados": []},
 {"id": "3","nome": "Produto 3","pesticidas": [],"dataColheita": "01/05/2025","dataPlatio": "01/04/2025","mercados": []}
-]`);
+]`;
 
 const form = document.querySelector("form");
 const btnBuscar = document.querySelector(".btn-buscar");
@@ -116,7 +119,7 @@ function criarCorpoTabela(dados) {
 function criarLinhaTabela(produto) {
   return `<tr>
             <td>${produto.nome}</td>
-            <td>${produto.dataPlatio}</td>
+            <td>${produto.dataPlantio}</td>
             <td>${produto.dataColheita}</td>
             <td>
               <a
