@@ -3,14 +3,20 @@ document.querySelector("form.login").addEventListener("submit", function(e) {
     const email = document.getElementById("email").value;
     const senha = document.getElementById("senha").value;
     const user = JSON.parse(localStorage.getItem("user"));
+    const mensagemModal = document.getElementById("mensagem-modal");
+    const modal = new bootstrap.Modal(document.getElementById("modalLogin"));
 
     if (user && user.email === email && user.senha === senha){
-        alert("Bem vindo!");
+        mensagemModal.textContent = `Login realizado com sucesso! Seja bem vindo(a) ${user.nome}`;
+        modal.show();
 
-        window.location.href = "../cadastro-produto";
+        setTimeout(() => {
+            window.location.href = "../cadastro-produto";
+        }, 2000);        
 
     } else {
-        alert("Usuário ou senha inválidos. Tente novamente!");
+        mensagemModal.textContent = "Usuário ou senha inválidos. Tente novamente!";
+        modal.show();
     }
 
 })

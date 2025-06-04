@@ -82,3 +82,31 @@ body{
     font-weight: 700;
     line-height: normal;
 }
+
+.modal-content{
+    background-color: #f0f9f4;
+    border: 2px solid #BDBDBD;
+    border-radius: 12px;
+}
+
+.modal-title{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.30rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+
+}
+
+.modal-header{
+    background-color: #48FF7F ;
+
+}
+
+.modal-body{
+    font-family: Roboto;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    text-align: center;
+}
