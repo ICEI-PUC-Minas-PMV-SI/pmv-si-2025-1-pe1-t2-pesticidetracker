@@ -10,7 +10,6 @@ const paginacaoContainer = document.getElementById("paginacao");
 const totalDeItensPorPagina = 10;
 let pagina = 1;
 
-adicionarMascaraData();
 buscarDadosFiltro();
 
 btnBuscar.addEventListener("click", () => {
@@ -117,8 +116,8 @@ function criarCorpoTabela(dados) {
 function criarLinhaTabela(produto) {
   return `<tr>
             <td>${produto.nome}</td>
-            <td>${produto.dataPlantio}</td>
-            <td>${produto.dataColheita}</td>
+            <td>${converterData(produto.dataPlantio)}</td>
+            <td>${converterData(produto.dataColheita)}</td>
             <td>
               <a
                 href="../Detalhes-Produtos/index.html?produto=${produto.id}"
@@ -164,19 +163,11 @@ function criarPaginacao(pagina, totalDeItems, totalDeItensPorPagina) {
   return html;
 }
 
-function adicionarMascaraData() {
-  document.querySelectorAll(".data").forEach((field) => {
-    field.addEventListener("input", function (e) {
-      let value = e.target.value.replace(/\D/g, "");
-
-      if (value.length > 2) {
-        value = value.slice(0, 2) + "/" + value.slice(2);
-      }
-      if (value.length > 5) {
-        value = value.slice(0, 5) + "/" + value.slice(5, 9);
-      }
-
-      e.target.value = value;
-    });
-  });
+function converterData(dataISO) {
+  try {
+    const [ano, mes, dia] = dataISO.split("-");
+    return `${dia}/${mes}/${ano}`;
+  } catch (e) {
+    return dataISO;
+  }
 }
