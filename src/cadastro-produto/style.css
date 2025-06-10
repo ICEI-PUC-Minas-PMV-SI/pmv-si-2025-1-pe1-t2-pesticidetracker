@@ -80,9 +80,14 @@ body{
     font-weight: 400;
     line-height: normal;
 }
-.campoAdicionarPesticida{
+.campoAdicionarPesticida, .campoAdicionarMercado{
     width: 100%;
     display: flex;
+}
+
+.campoAdicionarMercado .campo{
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #AAA;
 }
 
 .campoAdicionarPesticida .campo{
@@ -90,7 +95,7 @@ body{
     border: 1px solid #AAA;
 }
 
-.button-adicionar-pesticida{
+.button-adicionar-pesticida, .button-adicionar-mercado{
     height: auto;
     width: 36px;
     padding: 4px 11px;
@@ -110,6 +115,29 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+#usedPesticides, #mercadosAdicionados{
+    min-height: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+#usedPesticides span {
+    background-color: #AAA;
+    min-width: 20px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+#mercadosAdicionados span {
+    background-color: #AAA;
+    min-width: 20px;
+    padding: 0 5px;
+    border-radius: 5px;
 }
 
 .botaoAdicionarPorduto{
