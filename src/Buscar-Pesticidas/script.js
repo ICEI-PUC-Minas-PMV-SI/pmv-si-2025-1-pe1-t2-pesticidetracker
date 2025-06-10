@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const corpoTabela = document.getElementById("corpo-tabela");
   const form = document.getElementById("form-filtros");
+  const hoje = new Date().toLocaleDateString("pt-BR");
 
   const pesticidasIniciais = [
       {
@@ -44,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <td>${p.classe}</td>
         <td>${p.aprovadoEm}</td>
         <td>
-          <a href="../Detalhes-Pesticidas/index.html?pesticida=${p.id}" class="btn btn-primary btn-sm rounded-pill custom-btn">
-            <span class="me-1">Ver detalhes</span>
+          <a href="../detalhamento-pesticida/index.html?pesticida=${p.id}" class="btn btn-primary btn-sm rounded-pill custom-btn">
+            <span class="me-1 text-white">Ver detalhes</span>
             <i class="bi bi-box-arrow-up-right"></i>
           </a>
         </td>
