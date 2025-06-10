@@ -11,6 +11,7 @@ const totalDeItensPorPagina = 10;
 let pagina = 1;
 
 adicionarMascaraData();
+buscarDadosFiltro();
 
 btnBuscar.addEventListener("click", () => {
   pagina = 1;
