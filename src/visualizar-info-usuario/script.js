@@ -8,7 +8,7 @@ const updateField = (elementId, value) => {
         element.textContent = value || 'Não informado';
     }
 };
-
+/*Atualizado*/
 if (user) {
     updateField('nome', user.nome);
     updateField('sobrenome', user.sobrenome);
