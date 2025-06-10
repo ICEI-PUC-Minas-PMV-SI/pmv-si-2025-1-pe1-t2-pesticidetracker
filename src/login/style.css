@@ -58,12 +58,15 @@ body{
     border-radius: 8px;
     border: 1px solid #AAA;
 
-    color: #AAA;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.entradaTexto::placeholder {
+    color: #AAA;
 }
 
 .botaoLogin{
