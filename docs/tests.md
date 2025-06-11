@@ -34,7 +34,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT02 - Listagem de produtos cadastrados**
  :--------------: | ------------
-**Procedimento**  | 1) Com o usuário logado no sistema <br> 2) Clique no item "Produtos" na barra de navegação no cabeçalho <br> 3) Acesse a página de listagem de produtos.
+**Procedimento**  | 1) Com o usuário logado no [sistema](https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t2-pesticidetracker/cadastro-produto/) <br> 2) Clique no item "Produtos" na barra de navegação no cabeçalho <br> 3) Acesse a página de listagem de produtos.
 **Requisitos associados** | RF002
 **Resultado esperado** | Deve ser exibida uma tabela com os dados de todos os produtos já cadastrados. Caso não haja produtos cadastrados, deverá ser exibida a mensagem "Nenhum dado encontrado!"
 **Dados de entrada** | Inicialmente, ao abrir a página, é exibido todos os produtos, não sendo necessário a entrada de dados
@@ -42,7 +42,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT03 - Listagem de produtos cadastrados**
  :--------------: | ------------
-**Procedimento**  | 1) Com o usuário logado no sistema <br> 2) Clique no item "Produtos" na barra de navegação no cabeçalho <br> 3) Acesse a página de listagem de produtos <br> 4) Preencha os campos desejados no filtro <br> 5) Clique no botão "Buscar".
+**Procedimento**  | 1) Com o usuário logado no [sistema](https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t2-pesticidetracker/cadastro-produto/) <br> 2) Clique no item "Produtos" na barra de navegação no cabeçalho <br> 3) Acesse a página de listagem de produtos <br> 4) Preencha os campos desejados no filtro <br> 5) Clique no botão "Buscar".
 **Requisitos associados** | RF002
 **Resultado esperado** | Deve ser exibida uma tabela com os dados dos produtos cadastrados filtrados com base nos valores adicionados no filtro. Caso não haja produtos referentes a pesquisa, deverá ser exibida a mensagem "Nenhum dado encontrado!"
 **Dados de entrada** | Valores desejados para consulta dos produtos
@@ -52,10 +52,10 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
+|*Caso de Teste*                                 |*CT01 - Cadastro de usuário*                                         |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|Requisito Associado | RF-001 - O sistema deve permitir o cadastramento de usuários|
+|Link do vídeo do teste realizado: | ![Link de acesso a gravação](video/CT01.mkv)| 
 
 |*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
 |---|---|
