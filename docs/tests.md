@@ -24,21 +24,28 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
-
-**Caso de Teste** | **CT01 - Criar conta parte 1**
+**Caso de Teste** | **CT01 - Cadastro de usuário**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse o endereço www.teste.com.br <br> 2) Clique em criar conta <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Continuar".
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro
+**Procedimento**  | 1) Acesse o [sistema](https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t2-pesticidetracker/) <br> 2) Clique no botão "Cadastrar nova conta" no cabeçalho <br> 3) Preencha todos os campos do formulário <br> 3) Clique no botão "Adicionar conta".
+**Requisitos associados** | RF009
+**Resultado esperado** | Os dados devem ser salvos e o usuário deve ser redirecionado para tela de login
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT02 - Listagem de produtos cadastrados**
  :--------------: | ------------
-**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
-**Requisitos associados** | RF-001
-**Resultado esperado** | Usuário cadastrado
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
+**Procedimento**  | 1) Com o usuário logado no sistema <br> 2) Clique no item "Produtos" na barra de navegação no cabeçalho <br> 3) Acesse a página de listagem de produtos.
+**Requisitos associados** | RF002
+**Resultado esperado** | Deve ser exibida uma tabela com os dados de todos os produtos já cadastrados. Caso não haja produtos cadastrados, deverá ser exibida a mensagem "Nenhum dado encontrado!"
+**Dados de entrada** | Inicialmente, ao abrir a página, é exibido todos os produtos, não sendo necessário a entrada de dados
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT03 - Listagem de produtos cadastrados**
+ :--------------: | ------------
+**Procedimento**  | 1) Com o usuário logado no sistema <br> 2) Clique no item "Produtos" na barra de navegação no cabeçalho <br> 3) Acesse a página de listagem de produtos <br> 4) Preencha os campos desejados no filtro <br> 5) Clique no botão "Buscar".
+**Requisitos associados** | RF002
+**Resultado esperado** | Deve ser exibida uma tabela com os dados dos produtos cadastrados filtrados com base nos valores adicionados no filtro. Caso não haja produtos referentes a pesquisa, deverá ser exibida a mensagem "Nenhum dado encontrado!"
+**Dados de entrada** | Valores desejados para consulta dos produtos
 **Resultado obtido** | Sucesso
 
 ## Registro dos Testes de Software
