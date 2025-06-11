@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const monitorButton = document.querySelector('.page-detalhamento-pesticida__btn');
   monitorButton.addEventListener('click', () => {
     const pesticide = {
-      name: 'Acefato (Acephate)',
-      chemicalName: 'O,S-dimethyl acetylphosphoramidothioate',
+      nomecomum: 'Acefato (Acephate)',
+      nomequímico: 'O,S-dimethyl acetylphosphoramidothioate',
       group: 'Organofosforado',
-      class: 'Inseticida e acaricida',
+      classe: 'Inseticida e acaricida',
       formula: 'C4H10NO3PS',
-      approvedIn: 'Brasil, Estados Unidos, Canadá e Japão',
-      bannedIn: 'União Europeia'
+      aprovado: 'Brasil, Estados Unidos, Canadá e Japão',
+      banido: 'União Europeia'
     };
 
     try {
