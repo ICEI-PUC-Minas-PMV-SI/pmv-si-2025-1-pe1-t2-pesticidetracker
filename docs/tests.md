@@ -40,7 +40,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inicialmente, ao abrir a página, é exibido todos os produtos, não sendo necessário a entrada de dados
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT03 - Listagem de produtos cadastrados**
+**Caso de Teste** | **CT03 - Filtro de produtos cadastrados**
  :--------------: | ------------
 **Procedimento**  | 1) Com o usuário logado no [sistema](https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t2-pesticidetracker/cadastro-produto/) <br> 2) Clique no item "Produtos" na barra de navegação no cabeçalho <br> 3) Acesse a página de listagem de produtos <br> 4) Preencha os campos desejados no filtro <br> 5) Clique no botão "Buscar".
 **Requisitos associados** | RF002
@@ -62,13 +62,18 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 
 |*Caso de Teste*                                 |*CT01 - Cadastro de usuário*                                         |
 |---|---|
-|Requisito Associado | RF-001 - O sistema deve permitir o cadastramento de usuários|
-|Link do vídeo do teste realizado: | [videos/CT01.mkv](videos/CT01.mkv)| 
+|Requisito Associado | RF009 - O sistema deve permitir o cadastramento de usuários|
+|Link do vídeo do teste realizado: | [Caso de teste 01](videos/CT01.mkv)| 
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT02 - Listagem de produtos cadastrados*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Requisito Associado | RF002 - O sistema deve listar os produtos cadastrados|
+|Link do vídeo do teste realizado: | [Caso de teste 02](videos/CT02.mkv) | 
+
+|*Caso de Teste*                                 |*CT03 - Filtro de produtos cadastrados*                                        |
+|---|---|
+|Requisito Associado |RF002 - O sistema deve listar os produtos cadastrados|
+|Link do vídeo do teste realizado: | [Caso de teste 03](videos/CT03.mkv) | 
 
 
 ## Avaliação dos Testes de Software
