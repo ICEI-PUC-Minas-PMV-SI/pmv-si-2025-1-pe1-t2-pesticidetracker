@@ -55,7 +55,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*CT01 - Cadastro de usuário*                                         |
 |---|---|
 |Requisito Associado | RF-001 - O sistema deve permitir o cadastramento de usuários|
-|Link do vídeo do teste realizado: | [CT01](videos/CT01.mkv)| 
+|Link do vídeo do teste realizado: | [videos/CT01.mkv](videos/CT01.mkv)| 
 
 |*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
 |---|---|
