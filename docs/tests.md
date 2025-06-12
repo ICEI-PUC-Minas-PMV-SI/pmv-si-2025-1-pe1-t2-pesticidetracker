@@ -48,6 +48,14 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Valores desejados para consulta dos produtos
 **Resultado obtido** | Sucesso
 
+**Caso de Teste** | **CT04 - Tela de Login**
+ :--------------: | ------------
+**Procedimento**  | 1) Acesse o [sistema](https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t2-pesticidetracker/). <br> 2) Clique no botão Login no cabeçalho. <br> 3) Preencha os campos email e senha que foram cadastrados previamente. <br> 4) Clique no botão "Entrar".
+**Requisitos associados** | RF008
+**Resultado esperado** | Se os dados preenchidos estiverem corretos, o sistema enviará um aviso de "Login realizado com sucesso", e o usuário será redirecionado para a tela de Cadastro de Produtos.
+**Dados de entrada** | Inserção de email e senha previamente cadastrados.
+**Resultado obtido** | Sucesso
+
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
