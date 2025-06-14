@@ -11,34 +11,60 @@ function showAlert(message, isSuccess) {
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   `;
   document.body.appendChild(alertDiv);
-  setTimeout(() => alertDiv.remove(), 5000); // Remove alert after 5 seconds
+  setTimeout(() => alertDiv.remove(), 5000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const monitorButton = document.querySelector('.page-detalhamento-pesticida__btn');
-  monitorButton.addEventListener('click', () => {
-    const pesticide = {
-      nomecomum: 'Acefato (Acephate)',
-      nomequímico: 'O,S-dimethyl acetylphosphoramidothioate',
-      group: 'Organofosforado',
-      classe: 'Inseticida e acaricida',
-      formula: 'C4H10NO3PS',
-      aprovado: 'Brasil, Estados Unidos, Canadá e Japão',
-      banido: 'União Europeia'
-    };
+ // Substituir 'pesticideName' pelo nome real do pesticida a ser pesquisado (por exemplo, 'Acefato' ou 'acifluorfem' que deve ser identificado ao clicar em detalhe no pesticida)
+  const pesticideName = 'pesticideName'; // Placeholder for dynamic pesticide name
 
-    try {
-      let pesticidasMonitorados = JSON.parse(localStorage.getItem('pesticidasMonitorados')) || [];
-      if (!Array.isArray(pesticidasMonitorados)) pesticidasMonitorados = [];
-      if (!pesticidasMonitorados.some(p => p.name === pesticide.name)) {
-        pesticidasMonitorados.push(pesticide);
-        localStorage.setItem('pesticidasMonitorados', JSON.stringify(pesticidasMonitorados));
-        showAlert('Pesticida adicionado aos monitorados!', true);
+  // Obter dados de db.json
+  fetch('../db/db.json')
+    .then(response => response.json())
+    .then(data => {
+      const pesticide = data[pesticideName];
+      if (pesticide) {
+        // Populate the fields with data from db.json
+        document.getElementById('nomeComum').textContent = `${pesticide.ptBrName} (${pesticide.enName})`;
+        document.getElementById('nomeQuimico').textContent = pesticide.nome_químico;
+        document.getElementById('grupoQuimico').textContent = pesticide.grupo_químico;
+        document.getElementById('classe').textContent = pesticide.classe;
+        document.getElementById('formulaBruta').textContent = pesticide.fórmula_bruta;
+        document.getElementById('aprovadoEm').textContent = pesticide.aprovadoEm.join(', ');
+
+      
+        const monitorButton = document.querySelector('.page-detalhamento-pesticida__btn');
+        monitorButton.addEventListener('click', () => {
+          const pesticideData = {
+            nomecomum: `${pesticide.ptBrName} (${pesticide.enName})`,
+            nomequímico: pesticide.nome_químico,
+            grupo: pesticide.grupo_químico,
+            classe: pesticide.classe,
+            formula: pesticide.fórmula_bruta,
+            aprovado: pesticide.aprovadoEm.join(', '),
+            banido: pesticide.banidoEm || 'Não especificado'
+          };
+
+          try {
+            let pesticidasMonitorados = JSON.parse(localStorage.getItem('pesticidasMonitorados')) || [];
+            if (!Array.isArray(pesticidasMonitorados)) pesticidasMonitorados = [];
+            if (!pesticidasMonitorados.some(p => p.nomecomum === pesticideData.nomecomum)) {
+              pesticidasMonitorados.push(pesticideData);
+              localStorage.setItem('pesticidasMonitorados', JSON.stringify(pesticidasMonitorados));
+              showAlert('Pesticida adicionado aos monitorados!', true);
+            } else {
+              showAlert('Pesticida já está sendo monitorado!', false);
+            }
+          } catch (e) {
+            showAlert('Erro ao adicionar. Tente novamente!', false);
+          }
+        });
       } else {
-        showAlert('Pesticida já está sendo monitorado!', false);
+        showAlert('Pesticida não encontrado!', false);
       }
-    } catch (e) {
-      showAlert('Erro ao adicionar. Tente novamente!', false);
-    }
-  });
+    })
+    .catch(error => {
+      console.error('Error fetching db.json:', error);
+      showAlert('Erro ao carregar os dados do pesticida!', false);
+    });
 });
