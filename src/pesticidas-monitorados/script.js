@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const tableBody = document.getElementById("corpo-tabela");
+  const form = document.getElementById("form-filtros");
   const nomeInput = document.getElementById("name");
   const classeSelect = document.querySelector("select[name='class']");
   const regiaoSelect = document.querySelector("select[name='region']");
@@ -12,35 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
   function setPesticidas(pesticidas) {
     localStorage.setItem("pesticidasMonitorados", JSON.stringify(pesticidas));
   }
-
-  function renderTabela(filtro = {}) {
-    const pesticidas = getPesticidas();
-    let resultado = Object.values(pesticidas);
-    if (filtro.nome) {
-      resultado = resultado.filter(p =>
-        p.nome.toLowerCase().includes(filtro.nome.toLowerCase())
-      );
-    }
-
-    if (filtro.classe && filtro.classe !== "Selecione uma classe") {
-      resultado = resultado.filter(p =>
-        p.classe.toLowerCase().includes(filtro.classe.toLowerCase())
-      );
-    }
-
-    if (filtro.regiao && filtro.regiao !== "Selecione uma região") {
-      resultado = resultado.filter(p =>
-        p.aprovadoEm.toLowerCase().includes(filtro.regiao.toLowerCase())
-      );
-    }
-    
-    tableBody.innerHTML = resultado
+  const renderTabela = (arr) => {
+    tableBody.innerHTML = arr
       .map((p, i) => {
 
         return `
         <tr data-id="${i + 1}">
           <th scope="row">${i + 1}</th>
-          <td>${p.nomecomum}</td>
+          <td>${p.nomecomum}<a></a></td>
           <td>${p.banido}</td>
           <td>${p.criadoEm || '-'}</td>
           <td>
@@ -52,6 +32,33 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .join("");
   }
+
+   form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const dados = new FormData(form);
+
+    const filtro = {
+      ptBrName: dados.get("nome")?.trim().toLowerCase() || "",
+      classe: dados.get("classe")?.trim().toLowerCase() || "",
+      aprovadoEm: dados.get("aprovadoEm")?.trim().toLowerCase() || ""
+    };
+
+    const pesticidas = getPesticidas()
+    console.log(pesticidas)
+    const resultado = pesticidas.filter(p =>{
+      console.log(p)
+      return (
+        (filtro.nomecomum === ""?true:p.nomecomum.toLowerCase().includes(filtro.ptBrName)) 
+        && 
+        (p.hasOwnProperty('classe')? p.classe.toLowerCase().includes(filtro.classe): false) &&
+        (filtro.aprovadoEm === ""? true :p.aprovado.toLowerCase().includes(filtro.aprovadoEm))
+      
+      )
+    }
+    );
+
+    renderTabela(resultado);
+  });
 
   function aplicarFiltro() {
     const filtro = {
@@ -76,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(novos)
 
       setPesticidas(novos);
-      renderTabela();
+      renderTabela(novos);
     }
   });
 
@@ -84,5 +91,5 @@ document.addEventListener("DOMContentLoaded", () => {
   classeSelect.addEventListener("change", aplicarFiltro);
   regiaoSelect.addEventListener("change", aplicarFiltro);
 
-  renderTabela();
+  renderTabela(getPesticidas());
 });

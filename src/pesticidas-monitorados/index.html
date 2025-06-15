@@ -56,33 +56,42 @@
   <div class="pageContent container">
     <div class="pageHeader d-flex justify-content-between align-items-center mt-4">
       <h2>Pesticidas Monitorados</h2>
-      <button class="btn btn-primary">+ Monitorar</button>
+
+      <a class="btn btn-primary" href="../Buscar-Pesticidas/index.html">+ Monitorar</a>
     </div>
 
-    <div class="filters row mt-4">
-      <div class="mb-3 col-md-4">
-        <label for="name" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="name" placeholder="Buscar por nome" />
-      </div>
-      <div class="mb-3 col-md-4">
-        <label for="class" class="form-label">Classe</label>
-        <select name="class" class="form-select">
-          <option selected>Selecione uma classe</option>
-          <option value="Classe 1">Classe 1</option>
-          <option value="Classe 2">Classe 2</option>
-          <option value="Classe 3">Classe 3</option>
-        </select>
-      </div>
-      <div class="mb-3 col-md-4">
-        <label for="region" class="form-label">Regiões</label>
-        <select name="region" class="form-select">
-          <option selected>Selecione uma região</option>
-          <option value="EUA">EUA</option>
-          <option value="Japão">Japão</option>
-          <option value="Europa">Europa</option>
-        </select>
-      </div>
-    </div>
+    <form
+        class="d-flex flex-wrap gap-2 mb-4 align-items-end"
+        id="form-filtros"
+      >
+        <div class="flex-grow-1">
+          <input
+            type="text"
+            class="form-control"
+            name="nome"
+            placeholder="Ex: Acefato ..."
+          />
+        </div>
+        <div class="flex-grow-1">
+          <input
+            type="text"
+            class="form-control"
+            name="classe"
+            placeholder="Ex: Inseticida, Herbicida ..."
+          />
+        </div>
+        <div class="flex-grow-1">
+          <input
+            type="text"
+            class="form-control"
+            name="aprovadoEm"
+            placeholder="Ex: Japão, Canadá ..."
+          />
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+      </form>
 
     <table class="table table-striped">
       <thead>
