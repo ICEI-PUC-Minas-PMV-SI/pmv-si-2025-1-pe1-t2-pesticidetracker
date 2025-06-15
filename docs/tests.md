@@ -74,22 +74,10 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 ## Registro dos Testes de Software
 
-Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
-
-|*Caso de Teste*                                 |*CT05 - Buscar Pesticida*                                         |
+|*Caso de Teste*                                 |*CT01 - Cadastro de usuário*                                         |
 |---|---|
-|Requisito Associado | RF002 - O sistema deve permitir o cadastramento de usuários|
-|Link do vídeo do teste realizado: | [Caso de teste 05 ](![{27F715EF-3906-42D0-A90B-32ADD2A26C89}](https://github.com/user-attachments/assets/0b12feec-bb16-48d2-93b4-f684ec063802)
-)
-)| 
-
-
-|*Caso de Teste*                                 |*CT06 - Pesticidas Monitorados*                                        |
-|---|---|
-|Requisito Associado | RF004 - O sistema deve listar os produtos cadastrados|
-|Link do vídeo do teste realizado: | [Caso de teste 06 ](![{1E14E923-F6E6-4007-8A90-16F11A7D0764}](https://github.com/user-attachments/assets/669f08a1-e5c7-4d00-a0b7-eb4c2811c476
-![{0EA25B01-0842-4FD7-A4CB-9130B3B9C416}](https://github.com/user-attachments/assets/5cee731e-a2de-46f9-8ab2-56677d1ada04))
-) | 
+|Requisito Associado | RF009 - O sistema deve permitir o cadastramento de usuários|
+|Link do vídeo do teste realizado: | [Caso de teste 01](videos/CT01.mkv)| 
 
 
 |*Caso de Teste*                                 |*CT02 - Listagem de produtos cadastrados*                                        |
@@ -97,10 +85,23 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Requisito Associado | RF002 - O sistema deve listar os produtos cadastrados|
 |Link do vídeo do teste realizado: | [Caso de teste 02](videos/CT02.mkv) | 
 
+
 |*Caso de Teste*                                 |*CT03 - Filtro de produtos cadastrados*                                        |
 |---|---|
 |Requisito Associado |RF002 - O sistema deve listar os produtos cadastrados|
 |Link do vídeo do teste realizado: | [Caso de teste 03](videos/CT03.mkv) | 
+
+
+|*Caso de Teste*                                 |*CT05 - Buscar Pesticida*                                         |
+|---|---|
+|Requisito Associado | RF002 - O sistema deve permitir o cadastramento de usuários|
+|Link do vídeo do teste realizado: | Caso de teste 05![{27F715EF-3906-42D0-A90B-32ADD2A26C89}](https://github.com/user-attachments/assets/0b12feec-bb16-48d2-93b4-f684ec063802)| 
+
+
+|*Caso de Teste*                                 |*CT06 - Pesticidas Monitorados*                                        |
+|---|---|
+|Requisito Associado | RF004 - O sistema deve listar os produtos cadastrados|
+|Link do vídeo do teste realizado: | Caso de teste 06![{1E14E923-F6E6-4007-8A90-16F11A7D0764}](https://github.com/user-attachments/assets/669f08a1-e5c7-4d00-a0b7-eb4c2811c476) | 
 
 
 ## Avaliação dos Testes de Software
