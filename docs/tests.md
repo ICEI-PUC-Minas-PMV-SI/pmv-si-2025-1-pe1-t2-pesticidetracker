@@ -62,7 +62,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Requisitos associados** | RF002
 **Resultado esperado** | Se os dados preenchidos estiverem corretos, o sistema mostrará o Pesticida.
 **Dados de entrada** | Inserção de nome correto de Pesticida
-**Resultado obtido** | Insucesso
+**Resultado obtido** | Sucesso
 
 **Caso de Teste** | **CT06 - Pesticidas Monitorados**
  :--------------: | ------------
