@@ -87,9 +87,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  nomeInput.addEventListener("input", aplicarFiltro);
-  classeSelect.addEventListener("change", aplicarFiltro);
-  regiaoSelect.addEventListener("change", aplicarFiltro);
-
-  renderTabela(getPesticidas());
+  renderTabela(Object.values(getPesticidas()));
 });
