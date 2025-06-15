@@ -20,7 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
         return `
         <tr data-id="${i + 1}">
           <th scope="row">${i + 1}</th>
-          <td>${p.nomecomum}<a></a></td>
+          <td>
+            <a 
+            href="../detalhamento-pesticida/index.html?pesticida=${p.ptBrName}"
+            target="_blank">
+              ${p.nomecomum}
+            </a>
+          </td>
           <td>${p.banido}</td>
           <td>${p.criadoEm || '-'}</td>
           <td>

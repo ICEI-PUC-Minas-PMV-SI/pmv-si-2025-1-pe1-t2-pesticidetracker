@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           const pesticideData = {
             nomecomum: `${pesticide.ptBrName} (${pesticide.enName})`,
+            ptBrName: pesticide.ptBrName,
             nomequímico: pesticide.nome_químico,
             grupo: pesticide.grupo_químico,
             classe: pesticide.classe,
