@@ -4,47 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const classeSelect = document.querySelector("select[name='class']");
   const regiaoSelect = document.querySelector("select[name='region']");
 
-  //para caso nao carregue as informações
-  if (!localStorage.getItem("pesticidas")) {
-    const hoje = new Date().toLocaleDateString("pt-BR");
-    const pesticidasIniciais = [
-      {
-        id: "1",
-        nome: "Acefato",
-        classe: "Classe 1",
-        aprovadoEm: "Japão, EUA, Europa",
-        criadoEm: hoje
-      },
-      {
-        id: "2",
-        nome: "Glifosato",
-        classe: "Classe 2",
-        aprovadoEm: "Japão, EUA",
-        criadoEm: hoje
-      },
-      {
-        id: "3",
-        nome: "Malationa",
-        classe: "Classe 1",
-        aprovadoEm: "Japão, EUA, Europa",
-        criadoEm: hoje
-      }
-    ];
-    localStorage.setItem("pesticidas", JSON.stringify(pesticidasIniciais));
-  }
 
   function getPesticidas() {
-    return JSON.parse(localStorage.getItem("pesticidas")) || [];
+    return JSON.parse(localStorage.getItem("pesticidasMonitorados")) || [];
   }
 
   function setPesticidas(pesticidas) {
-    localStorage.setItem("pesticidas", JSON.stringify(pesticidas));
+    localStorage.setItem("pesticidasMonitorados", JSON.stringify(pesticidas));
   }
 
   function renderTabela(filtro = {}) {
     const pesticidas = getPesticidas();
-    let resultado = pesticidas;
-
+    let resultado = Object.values(pesticidas);
+    console.log(resultado)
     if (filtro.nome) {
       resultado = resultado.filter(p =>
         p.nome.toLowerCase().includes(filtro.nome.toLowerCase())
@@ -63,13 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
 
+    console.log(resultado)
+    
     tableBody.innerHTML = resultado
       .map((p, i) => {
+        console.log(p)
         return `
         <tr data-id="${p.id}">
           <th scope="row">${i + 1}</th>
-          <td>${p.nome}</td>
-          <td>${p.aprovadoEm}</td>
+          <td>${p.nomecomum}</td>
+          <td>${p.banido}</td>
           <td>${p.criadoEm || '-'}</td>
           <td>
             <button class="btn btn-danger btn-remover">

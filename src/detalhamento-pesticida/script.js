@@ -16,7 +16,7 @@ function showAlert(message, isSuccess) {
 
 document.addEventListener('DOMContentLoaded', () => {
  
- const currentUrl = window.location.href;
+  const currentUrl = window.location.href;
 
   const url = new URL(currentUrl);
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       const pesticide = data[pesticideName];
       if (pesticide) {
-        // Populate the fields with data from db.json
+    
         document.getElementById('nomeComum').textContent = `${pesticide.ptBrName} (${pesticide.enName})`;
         document.getElementById('nomeQuimico').textContent = pesticide.nome_químico;
         document.getElementById('grupoQuimico').textContent = pesticide.grupo_químico;
