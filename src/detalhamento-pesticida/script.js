@@ -15,9 +15,14 @@ function showAlert(message, isSuccess) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
- // Substituir 'pesticideName' pelo nome real do pesticida a ser pesquisado (por exemplo, 'Acefato' ou 'acifluorfem' que deve ser identificado ao clicar em detalhe no pesticida)
-  const pesticideName = 'pesticideName'; // Placeholder for dynamic pesticide name
+ 
+ const currentUrl = window.location.href;
 
+  const url = new URL(currentUrl);
+
+  const params = new URLSearchParams(url.search);
+
+  const pesticideName =  params.get('pesticida'); // Placeholder for dynamic pesticide name
   // Obter dados de db.json
   fetch('../db/db.json')
     .then(response => response.json())
