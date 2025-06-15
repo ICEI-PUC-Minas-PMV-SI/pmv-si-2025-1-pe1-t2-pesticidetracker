@@ -80,6 +80,22 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | O usuário somente precisa clicar no botão de "Ver detalhes", sem a necessidade de entrar com nenhum dado
 **Resultado obtido** | Sucesso
 
+**Caso de Teste** | **CT08 - Acesso as informações do usuário**
+ :--------------: | ------------
+**Procedimento**  | 1) Com o usuário logado no [sistema](https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t2-pesticidetracker/cadastro-produto/) <br> 2) Clique no botão com o nome do usuário logado <br> 3) Deve ser redirecionado para outra página com as informações do usuário.
+**Requisitos associados** | RF010
+**Resultado esperado** | Deve ser exibida uma tela com as informações do usuário
+**Dados de entrada** | Não é necessário entrada de dados
+**Resultado obtido** | Sucesso
+
+**Caso de Teste** | **CT09 - Edição de usuário**
+ :--------------: | ------------
+**Procedimento**  | 1)  Com o usuário logado no sistema e na [página de informações do usuário](https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t2-pesticidetracker/visualizar-info-usuario/) <br> 2) Clique no botão de "Editar" <br> 3) Deve ser redirecionado para outra página com um formulário preenchido com as informações do usuário <br> 4) Edite os campos do formulário <br> 5) Clique no botão "Editar".
+**Requisitos associados** | RF011
+**Resultado esperado** | As informações do usuário deve ser editadas
+**Dados de entrada** | Os campos do formulário de edição devem estar preechidos corretamente
+**Resultado obtido** | Sucesso
+
 
 ## Registro dos Testes de Software
 
@@ -115,8 +131,18 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 |*Caso de Teste*                                 |*CT07 - Acesso aos detalhes do pesticida*                                         |
 |---|---|
-|Requisito Associado | RF005	O sistema deve permitir que o usuário consulte a situação de um pesticida específico no banco de dados local|
-|Link do vídeo do teste realizado: | [Caso de teste 07](videos/CT07.mkv)| 
+|Requisito Associado | RF005 - O sistema deve permitir que o usuário consulte a situação de um pesticida específico no banco de dados local|
+|Link do vídeo do teste realizado: | [Caso de teste 07](videos/CT07.mkv)|
+
+|*Caso de Teste*                                 |*CT08 - Acesso as informações do usuário*                                         |
+|---|---|
+|Requisito Associado | RF010 - O sistema deve permitir que o usuário visualize suas informações cadastradas.|
+|Link do vídeo do teste realizado: | [Caso de teste 08](videos/CT08.mkv)| 
+
+|*Caso de Teste*                                 |*CT09 - Edição de usuário*                                         |
+|---|---|
+|Requisito Associado | RF011 - O sistema deve permitir que o usuário edite suas informações pessoais.|
+|Link do vídeo do teste realizado: | [Caso de teste 09](videos/CT09.mkv)| 
 
 ## Avaliação dos Testes de Software
 
