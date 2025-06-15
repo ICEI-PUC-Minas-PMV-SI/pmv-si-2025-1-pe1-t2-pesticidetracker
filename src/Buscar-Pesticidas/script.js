@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", async() => {
   pesticidas = Object.values(pesticidas)
 
   function renderTabela(pesticidasFiltrados) {
-    console.log(pesticidasFiltrados)
     if (pesticidasFiltrados.length === 0) {
       corpoTabela.innerHTML = `<tr><td colspan="4" class="text-center">Nenhum pesticida encontrado.</td></tr>`;
       return;

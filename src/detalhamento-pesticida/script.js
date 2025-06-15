@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
       
         const monitorButton = document.querySelector('.page-detalhamento-pesticida__btn');
         monitorButton.addEventListener('click', () => {
+          const date = new Date();
+
           const pesticideData = {
             nomecomum: `${pesticide.ptBrName} (${pesticide.enName})`,
             nomequímico: pesticide.nome_químico,
@@ -47,8 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
             classe: pesticide.classe,
             formula: pesticide.fórmula_bruta,
             aprovado: pesticide.aprovadoEm.join(', '),
-            banido: pesticide.banidoEm || 'Não especificado'
+            banido: pesticide.banidoEm || 'Não especificado',
+            criadoEm: date.toISOString().split('T')[0]
           };
+          console.log(pesticideData)
 
           try {
             let pesticidasMonitorados = JSON.parse(localStorage.getItem('pesticidasMonitorados')) || [];

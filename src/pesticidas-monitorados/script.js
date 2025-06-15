@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderTabela(filtro = {}) {
     const pesticidas = getPesticidas();
     let resultado = Object.values(pesticidas);
-    console.log(resultado)
     if (filtro.nome) {
       resultado = resultado.filter(p =>
         p.nome.toLowerCase().includes(filtro.nome.toLowerCase())
@@ -34,14 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
         p.aprovadoEm.toLowerCase().includes(filtro.regiao.toLowerCase())
       );
     }
-
-    console.log(resultado)
     
     tableBody.innerHTML = resultado
       .map((p, i) => {
-        console.log(p)
+
         return `
-        <tr data-id="${p.id}">
+        <tr data-id="${i + 1}">
           <th scope="row">${i + 1}</th>
           <td>${p.nomecomum}</td>
           <td>${p.banido}</td>
@@ -66,11 +63,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.addEventListener("click", (e) => {
+    console.log(e)
     if (e.target.closest(".btn-remover")) {
       const row = e.target.closest("tr");
+      console.log('row')
+      console.log(row)
       const id = row.getAttribute("data-id");
+      console.log(id)
       const pesticidas = getPesticidas();
-      const novos = pesticidas.filter(p => p.id !== id);
+      console.log(pesticidas)
+      const novos = pesticidas.filter((_, index) => index !== id - 1);   
+      console.log(novos)
+
       setPesticidas(novos);
       renderTabela();
     }
