@@ -116,6 +116,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |Requisito Associado |RF002 - O sistema deve listar os produtos cadastrados|
 |Link do vídeo do teste realizado: | [Caso de teste 03](videos/CT03.mkv) | 
 
+|*Caso de Teste*                                 |*CT04 - Tela de Login*                                        |
+|---|---|
+|Requisito Associado |RF008 - O sistema deve permitir que o usuário acesse sua conta por meio de uma tela de login.|
+|Link do vídeo do teste realizado: | [Caso de teste 04](videos/CT04.mp4) | 
+
 
 |*Caso de Teste*                                 |*CT05 - Buscar Pesticida*                                         |
 |---|---|
