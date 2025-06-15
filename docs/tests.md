@@ -72,6 +72,15 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de nome correto de Pesticida
 **Resultado obtido** | Sucesso
 
+**Caso de Teste** | **CT07 - Acesso aos detalhes do pesticida**
+ :--------------: | ------------
+**Procedimento**  | 1) Com o usuário logado no sistema e na [página de busca de pesticidas](https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t2-pesticidetracker/Buscar-Pesticidas/index.html) <br> 2) Ao clicar no botão "Ver detalhes" do pesticida <br> 3)Deve ser redirecionado para outra página com os detalhes do pesticida selecionado.
+**Requisitos associados** | RF005
+**Resultado esperado** | Deve ser exibida uma tela com os detalhes do pesticida escolhido
+**Dados de entrada** | O usuário somente precisa clicar no botão de "Ver detalhes", sem a necessidade de entrar com nenhum dado
+**Resultado obtido** | Sucesso
+
+
 ## Registro dos Testes de Software
 
 |*Caso de Teste*                                 |*CT01 - Cadastro de usuário*                                         |
@@ -103,6 +112,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |Requisito Associado | RF004 - O sistema deve listar os produtos cadastrados|
 |Link do vídeo do teste realizado: | Caso de teste 06![{1E14E923-F6E6-4007-8A90-16F11A7D0764}](https://github.com/user-attachments/assets/669f08a1-e5c7-4d00-a0b7-eb4c2811c476) | 
 
+
+|*Caso de Teste*                                 |*CT07 - Acesso aos detalhes do pesticida*                                         |
+|---|---|
+|Requisito Associado | RF005	O sistema deve permitir que o usuário consulte a situação de um pesticida específico no banco de dados local|
+|Link do vídeo do teste realizado: | [Caso de teste 07](videos/CT07.mkv)| 
 
 ## Avaliação dos Testes de Software
 
