@@ -1,6 +1,6 @@
 # Testes
 
-Neste projeto sserão adotados os teste de software:
+Neste projeto serão adotados os teste de software para garantir uma melhor qualidade da aplicação:
 
  - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
 
