@@ -16,7 +16,7 @@ function showAlert(message, isSuccess) {
 
 document.addEventListener('DOMContentLoaded', () => {
  
- const currentUrl = window.location.href;
+  const currentUrl = window.location.href;
 
   const url = new URL(currentUrl);
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       const pesticide = data[pesticideName];
       if (pesticide) {
-        // Populate the fields with data from db.json
+    
         document.getElementById('nomeComum').textContent = `${pesticide.ptBrName} (${pesticide.enName})`;
         document.getElementById('nomeQuimico').textContent = pesticide.nome_químico;
         document.getElementById('grupoQuimico').textContent = pesticide.grupo_químico;
@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
       
         const monitorButton = document.querySelector('.page-detalhamento-pesticida__btn');
         monitorButton.addEventListener('click', () => {
+          const date = new Date();
+
           const pesticideData = {
             nomecomum: `${pesticide.ptBrName} (${pesticide.enName})`,
             nomequímico: pesticide.nome_químico,
@@ -47,8 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
             classe: pesticide.classe,
             formula: pesticide.fórmula_bruta,
             aprovado: pesticide.aprovadoEm.join(', '),
-            banido: pesticide.banidoEm || 'Não especificado'
+            banido: pesticide.banidoEm || 'Não especificado',
+            criadoEm: date.toISOString().split('T')[0]
           };
+          console.log(pesticideData)
 
           try {
             let pesticidasMonitorados = JSON.parse(localStorage.getItem('pesticidasMonitorados')) || [];
