@@ -29,41 +29,90 @@
   </head>
   <body>
 
-    <header>
+   <header>
       <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-          <a class="navbar-brand">
-              <img src="../images/pesticide-tracker-logo 1.png" width="72" height="74" alt="Pesticide Tracker">
-          </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-                 
-          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="../login/index.html" role="button"> Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="../lista-produtos/index.html" role="button">Produtos</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" href="../pesticidas-monitorados/Buscar-Pesticidas.html" id="navbarDropdownPesticidas" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pesticidas
-                  </a>
-                  <div class="dropdown-menu " aria-labelledby="navbarDropdownPesticidas">
-                    <a class="dropdown-item custom-size-item" href="../Buscar-Pesticidas/index.html">Buscar</a>
-                    <a class="dropdown-item custom-size-item" href="../pesticidas-monitorados/index.html">Listar <br> Monitoramentos</a>
-                  </div>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons" id="usuario" href="../visualizar-info-usuario/index.html" role="button">Usuário</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <a class="navbar-brand">
+          <img
+            src="../images/pesticide-tracker-logo 1.png"
+            width="72"
+            height="74"
+            alt="Pesticide Tracker"
+          />
+        </a>
 
-  </header>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#conteudoNavbarSuportado"
+          aria-controls="conteudoNavbarSuportado"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+                href="../login/index.html"
+                role="button"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+                href="../lista-produtos/index.html"
+                role="button"
+                >Produtos</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+                href="../pesticidas-monitorados/Buscar-Pesticidas.html"
+                id="navbarDropdownPesticidas"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pesticidas
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownPesticidas"
+              >
+                <a
+                  class="dropdown-item custom-size-item"
+                  href="../Buscar-Pesticidas/index.html"
+                  >Buscar</a
+                >
+                <a
+                  class="dropdown-item custom-size-item"
+                  href="../pesticidas-monitorados/index.html"
+                  >Listar <br />
+                  Monitoramentos</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn-outline-secondary mx-1 rounded-pill custom-size custom-buttons"
+                id="usuario"
+                href="../visualizar-info-usuario/index.html"
+                role="button"
+                >Usuário</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <main class="paginaCadastroProduto">
       <form class="cadastro">
@@ -164,7 +213,12 @@
 
     
   </head>
-  
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../barra-de-navegacao/script.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>
