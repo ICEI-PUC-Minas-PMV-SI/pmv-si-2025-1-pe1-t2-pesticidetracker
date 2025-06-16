@@ -139,4 +139,4 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Os testes iniciais do nosso sistema demonstraram que suas funcionalidades estão estáveis, confiáveis e operacionais cumprindo com êxito os requisitos para os quais foram projetadas. Tais resultados positivos servem como base para garantir a evolução do nosso projeto. Podemos avançar para uma próxima etapa de testes tendo como foco cenários de erros, validação e segurança, visando assegurar a qualidade do sistema.
