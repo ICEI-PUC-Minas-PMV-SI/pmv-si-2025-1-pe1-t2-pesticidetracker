@@ -84,6 +84,14 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Os campos do formulário de edição devem estar preechidos corretamente
 **Resultado obtido** | Sucesso
 
+**Caso de Teste** | **CT10 - Cadastro de Produto**
+ :--------------: | ------------
+**Procedimento**  | 1) Após realizar o login, o usuário é direcionado a página de cadastrar um produto <br> 2) Preencha todos os campos do formulário 3) Clique no botão "Cadastrar Produto".
+**Requisitos associados** | RF001
+**Resultado esperado** | Os dados devem ser salvos e o usuário deverá conseguir visualizá-los na página de produtos.
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro de produto.
+**Resultado obtido** | Sucesso
+
 
 ## Registro dos Testes de Software
 
@@ -136,6 +144,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |---|---|
 |Requisito Associado | RF011 - O sistema deve permitir que o usuário edite suas informações pessoais.|
 |Link do vídeo do teste realizado: | [Caso de teste 09](videos/CT09.mkv)| 
+
+|*Caso de Teste*                                 |*CT10 - Cadastro de Produto*                                         |
+|---|---|
+|Requisito Associado | RF001 - O sistema deve permitir o cadastramento de produtos incluindo suas principais características e os pesticidas utilizados.|
+|Link do vídeo do teste realizado: | [Caso de teste 10](videos/CT10.mp4)| 
 
 ## Avaliação dos Testes de Software
 
