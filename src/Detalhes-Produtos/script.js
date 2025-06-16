@@ -14,13 +14,13 @@
 //     }
 //   ]
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
   const id = new URLSearchParams(window.location.search).get("produto");
   const produto = produtos.find((prod) => prod.id === Number(id));
 
   fillProductInfo(produto);
-  createRegulatoryTable(produto.pesticidas);
+  await createRegulatoryTable(produto.pesticidas);
 });
 
 function fillProductInfo(produto) {
@@ -42,104 +42,109 @@ function formatDateString(dateString) {
   return date.toLocaleDateString("pt-BR");
 }
 
-function createRegulatoryTable(pesticidasUtilizados) {
-  const pesticidasDb = JSON.parse(localStorage.getItem("pesticidas")) || [];
+async function createRegulatoryTable(pesticidasUtilizados) {
+  try {
+    const response = await fetch("../db/db.json");
+    const pesticidasDb = await response.json();
 
-  const tableContainer =
-    document.querySelector(".approval-table").parentElement;
-  const existingTable = document.querySelector(".approval-table");
+    const tableContainer =
+      document.querySelector(".approval-table").parentElement;
+    const existingTable = document.querySelector(".approval-table");
 
-  const table = document.createElement("table");
-  table.className = "approval-table";
+    const table = document.createElement("table");
+    table.className = "approval-table";
 
-  const thead = document.createElement("thead");
-  const headerRow = document.createElement("tr");
-  headerRow.innerHTML = `
-    <th>Pesticida utilizado</th>
-    <th>Brasil</th>
-    <th>Japão</th>
-    <th>EUA</th>
-    <th>Europa</th>
-  `;
-  thead.appendChild(headerRow);
-  table.appendChild(thead);
+    const thead = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+    headerRow.innerHTML = `
+      <th>Pesticida utilizado</th>
+      <th>Brasil</th>
+      <th>Japão</th>
+      <th>EUA</th>
+      <th>Europa</th>
+    `;
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
 
-  const tbody = document.createElement("tbody");
+    const tbody = document.createElement("tbody");
 
-  const overallApproval = {
-    Brasil: true,
-    Japão: true,
-    EUA: true,
-    Europa: true,
-  };
+    const overallApproval = {
+      Brasil: true,
+      Japão: true,
+      EUA: true,
+      Europa: true,
+    };
 
-  pesticidasUtilizados.forEach((pesticidaNome) => {
-    const pesticidaInfo = pesticidasDb.find((p) => p.nome === pesticidaNome);
-    const row = document.createElement("tr");
+    pesticidasUtilizados.forEach((pesticidaNome) => {
+      const pesticidaInfo = pesticidasDb[pesticidaNome];
+      const row = document.createElement("tr");
 
-    if (pesticidaInfo && pesticidaInfo.aprovadoEm) {
-      const aprovadoEm = pesticidaInfo.aprovadoEm;
+      if (pesticidaInfo && pesticidaInfo.aprovadoEm) {
+        const aprovadoEm = pesticidaInfo.aprovadoEm;
 
-      const brasilApproved = aprovadoEm.includes("Brasil");
-      const japaoApproved = aprovadoEm.includes("Japão");
-      const euaApproved = aprovadoEm.includes("EUA");
-      const europaApproved = aprovadoEm.includes("Europa");
+        const brasilApproved = aprovadoEm.includes("Brasil");
+        const japaoApproved = aprovadoEm.includes("Japão");
+        const euaApproved = aprovadoEm.includes("EUA");
+        const europaApproved = aprovadoEm.includes("Europa");
 
-      if (!brasilApproved) overallApproval.Brasil = false;
-      if (!japaoApproved) overallApproval.Japão = false;
-      if (!euaApproved) overallApproval.EUA = false;
-      if (!europaApproved) overallApproval.Europa = false;
+        if (!brasilApproved) overallApproval.Brasil = false;
+        if (!japaoApproved) overallApproval.Japão = false;
+        if (!euaApproved) overallApproval.EUA = false;
+        if (!europaApproved) overallApproval.Europa = false;
 
-      row.innerHTML = `
-        <td>${pesticidaNome}</td>
-        <td><span class="${brasilApproved ? "check" : "cross"}">${
-        brasilApproved ? "✓" : "✗"
-      }</span></td>
-        <td><span class="${japaoApproved ? "check" : "cross"}">${
-        japaoApproved ? "✓" : "✗"
-      }</span></td>
-        <td><span class="${euaApproved ? "check" : "cross"}">${
-        euaApproved ? "✓" : "✗"
-      }</span></td>
-        <td><span class="${europaApproved ? "check" : "cross"}">${
-        europaApproved ? "✓" : "✗"
-      }</span></td>
-      `;
-    } else {
-      overallApproval["Brasil"] = false;
-      overallApproval["Japão"] = false;
-      overallApproval["EUA"] = false;
-      overallApproval["Europa"] = false;
+        row.innerHTML = `
+          <td>${pesticidaNome}</td>
+          <td><span class="${brasilApproved ? "check" : "cross"}">${
+          brasilApproved ? "✓" : "✗"
+        }</span></td>
+          <td><span class="${japaoApproved ? "check" : "cross"}">${
+          japaoApproved ? "✓" : "✗"
+        }</span></td>
+          <td><span class="${euaApproved ? "check" : "cross"}">${
+          euaApproved ? "✓" : "✗"
+        }</span></td>
+          <td><span class="${europaApproved ? "check" : "cross"}">${
+          europaApproved ? "✓" : "✗"
+        }</span></td>
+        `;
+      } else {
+        overallApproval["Brasil"] = false;
+        overallApproval["Japão"] = false;
+        overallApproval["EUA"] = false;
+        overallApproval["Europa"] = false;
 
-      row.innerHTML = `
-        <td>${pesticidaNome}</td>
-        <td><span class="cross">✗</span></td>
-        <td><span class="cross">✗</span></td>
-        <td><span class="cross">✗</span></td>
-        <td><span class="cross">✗</span></td>
-      `;
-    }
+        row.innerHTML = `
+          <td>${pesticidaNome}</td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="cross">✗</span></td>
+        `;
+      }
 
-    tbody.appendChild(row);
-  });
-  const summaryRow = document.createElement("tr");
-  summaryRow.innerHTML = `
-    <td><strong>Pode ser vendido</strong></td>
-    <td><span class="${overallApproval["Brasil"] ? "check" : "cross"}">${
-    overallApproval["Brasil"] ? "✓" : "✗"
-  }</span></td>
-    <td><span class="${overallApproval["Japão"] ? "check" : "cross"}">${
-    overallApproval["Japão"] ? "✓" : "✗"
-  }</span></td>
-    <td><span class="${overallApproval["EUA"] ? "check" : "cross"}">${
-    overallApproval["EUA"] ? "✓" : "✗"
-  }</span></td>
-    <td><span class="${overallApproval["Europa"] ? "check" : "cross"}">${
-    overallApproval["Europa"] ? "✓" : "✗"
-  }</span></td>
-  `;
-  tbody.appendChild(summaryRow);
+      tbody.appendChild(row);
+    });
+    const summaryRow = document.createElement("tr");
+    summaryRow.innerHTML = `
+      <td><strong>Pode ser vendido</strong></td>
+      <td><span class="${overallApproval["Brasil"] ? "check" : "cross"}">${
+      overallApproval["Brasil"] ? "✓" : "✗"
+    }</span></td>
+      <td><span class="${overallApproval["Japão"] ? "check" : "cross"}">${
+      overallApproval["Japão"] ? "✓" : "✗"
+    }</span></td>
+      <td><span class="${overallApproval["EUA"] ? "check" : "cross"}">${
+      overallApproval["EUA"] ? "✓" : "✗"
+    }</span></td>
+      <td><span class="${overallApproval["Europa"] ? "check" : "cross"}">${
+      overallApproval["Europa"] ? "✓" : "✗"
+    }</span></td>
+    `;
+    tbody.appendChild(summaryRow);
 
-  table.appendChild(tbody);
-  tableContainer.replaceChild(table, existingTable);
+    table.appendChild(tbody);
+    tableContainer.replaceChild(table, existingTable);
+  } catch (error) {
+    console.error("Error loading pesticides database:", error);
+  }
 }
