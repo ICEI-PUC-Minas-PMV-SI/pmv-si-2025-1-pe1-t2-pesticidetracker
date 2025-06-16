@@ -92,6 +92,14 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro de produto.
 **Resultado obtido** | Sucesso
 
+**Caso de Teste** | **CT11 - Detalhamento de produtos cadastrados**
+ :--------------: | ------------
+**Procedimento**  | 1) Com o usuário logado no [sistema](https://icei-puc-minas-pmv-si.github.io/pmv-si-2025-1-pe1-t2-pesticidetracker/cadastro-produto/) <br> 2) Clique no item "Produtos" na barra de navegação no cabeçalho <br> 3) Acesse a página de listagem de produtos <br> 4) Selecione o produto que deseja ver os detalhes 5) Clique no botão ver detalhes
+**Requisitos associados** | RF002
+**Resultado esperado** | Deve ser exibida uma tela com os dados do produto escolhido.
+**Dados de entrada** |  O usuário somente precisa clicar no botão de "Ver detalhes", sem a necessidade de entrar com nenhum dado
+**Resultado obtido** | Sucesso
+
 
 ## Registro dos Testes de Software
 
