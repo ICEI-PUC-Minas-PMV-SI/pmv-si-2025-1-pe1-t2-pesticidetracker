@@ -129,7 +129,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |*Caso de Teste*                                 |*CT05 - Buscar Pesticida*                                         |
 |---|---|
 |Requisito Associado | RF002 - O sistema deve permitir o cadastramento de usuários|
-|Link do vídeo do teste realizado: | Caso de teste 05![{27F715EF-3906-42D0-A90B-32ADD2A26C89}](https://github.com/user-attachments/assets/0b12feec-bb16-48d2-93b4-f684ec063802)| 
+|Link do vídeo do teste realizado: | [Caso de teste 05](videos/CT05.mp4)|
 
 
 |*Caso de Teste*                                 |*CT06 - Pesticidas Monitorados*                                        |
@@ -157,6 +157,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 |---|---|
 |Requisito Associado | RF001 - O sistema deve permitir o cadastramento de produtos incluindo suas principais características e os pesticidas utilizados.|
 |Link do vídeo do teste realizado: | [Caso de teste 10](videos/CT10.mp4)| 
+
+|*Caso de Teste*                                 |*CT11 - Detalhamento de Produto*                                         |
+|---|---|
+|Requisito Associado | RF002 - O sistema deve listar os produtos cadastrados.	|
+|Link do vídeo do teste realizado: | [Caso de teste 11](videos/CT11.mp4)| 
 
 ## Avaliação dos Testes de Software
 
