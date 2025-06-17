@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
               ${p.nomecomum}
             </a>
           </td>
-          <td>${p.banido}</td>
+          <td>${p.mercadosMonitorados}</td>
           <td>${p.criadoEm || '-'}</td>
           <td>
             <button class="btn btn-danger btn-remover">
