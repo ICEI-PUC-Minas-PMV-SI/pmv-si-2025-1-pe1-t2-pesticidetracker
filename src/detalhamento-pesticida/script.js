@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
             classe: pesticide.classe,
             formula: pesticide.fórmula_bruta,
             aprovado: pesticide.aprovadoEm.join(', '),
-            banido: pesticide.banidoEm || 'Não especificado',
             criadoEm: date.toISOString().split('T')[0]
           };
           console.log(pesticideData)
