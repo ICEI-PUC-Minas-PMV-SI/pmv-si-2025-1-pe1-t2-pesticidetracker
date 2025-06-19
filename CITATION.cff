@@ -37,7 +37,9 @@ authors:
 repository-code: >-
   https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
 abstract: >-
-  Plataforma desenvolvida para apoiar empreendedores rurais na exportação de produtos agrícolas. O sistema analisa e informa quais pesticidas são aceitos em determinado país alvo, considerando suas regulamentações. Ele é focado na simplicidade e na intuitividade, visando garantir uma experiência de usuário acessível.
+  Plataforma desenvolvida para apoiar empreendedores rurais na exportação de produtos agrícolas. 
+  O sistema analisa e informa quais pesticidas são aceitos em determinado país alvo, considerando suas regulamentações. 
+  Ele é focado na simplicidade e na intuitividade, visando garantir uma experiência de usuário acessível.
 keywords:
   - Desenvolvimento Web
   - HTML
