@@ -2,14 +2,29 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: Web Application Template
+title: Pesticide Tracker
 message: >-
   Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
   Web da PUC Minas.
 type: software
 authors:
   - given-names: Aluno 1
-    family-names: Nome Completo
+    family-names: Kayhene Abreu Bernardo Silva
+    email: kayhene.abreu@sga.pucminas.br
+  - given-names: Aluno 2
+    family-names: Nome completo
+    email: aluno@pucminas.br
+  - given-names: Aluno 3
+    family-names: Nome completo
+    email: aluno@pucminas.br
+  - given-names: Aluno 4
+    family-names: Nome completo
+    email: aluno@pucminas.br
+  - given-names: Aluno 5
+    family-names: Nome completo
+    email: aluno@pucminas.br
+  - given-names: Aluno 6
+    family-names: Nome completo
     email: aluno@pucminas.br
     affiliation: PUC Minas
   - given-names: Hugo
@@ -22,8 +37,7 @@ authors:
 repository-code: >-
   https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
 abstract: >-
-  Descrever resumidamente, em um ou dois parágrafos, o
-  projeto que foi desenvolvido.
+  Plataforma desenvolvida para apoiar empreendedores rurais na exportação de produtos agrícolas. O sistema analisa e informa quais pesticidas são aceitos em determinado país alvo, considerando suas regulamentações. Ele é focado na simplicidade e na intuitividade, visando garantir uma experiência de usuário acessível.
 keywords:
   - Desenvolvimento Web
   - HTML
