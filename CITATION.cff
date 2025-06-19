@@ -8,8 +8,8 @@ message: >-
   Web da PUC Minas.
 type: software
 authors:
-  - given-names: Aluno 1
-    family-names: Kayhene Abreu Bernardo Silva
+  - given-names: Kayhene
+    family-names: Abreu Bernardo Silva
     email: kayhene.abreu@sga.pucminas.br
   - given-names: Aluno 2
     family-names: Nome completo
