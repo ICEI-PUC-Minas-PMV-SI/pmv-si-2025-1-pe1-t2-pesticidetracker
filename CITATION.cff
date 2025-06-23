@@ -17,6 +17,9 @@ authors:
   - given-names: Antonio Adrian
     family-names: Oliveira Alves
     email: antonio.adrian@sga.pucminas.br
+ - given-names: Tiago
+    family-names: Daniel Nocce
+    email: tdnocce@sga.pucminas.br
 repository-code: >-
   https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
 abstract: >-
