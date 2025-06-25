@@ -21,7 +21,7 @@ authors:
     family-names: Daniel Nocce
     email: tdnocce@sga.pucminas.br
 repository-code: >-
-  https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
+  https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe1-t2-pesticidetracker
 abstract: >-
   Plataforma desenvolvida para apoiar empreendedores rurais na exportação de produtos agrícolas. 
   O sistema analisa e informa quais pesticidas são aceitos em determinado país alvo, considerando suas regulamentações. 
@@ -32,4 +32,4 @@ keywords:
   - CSS
   - JavaScript
   - Template
-date-released: '2024-06-23'
+date-released: '2025-06-22'
